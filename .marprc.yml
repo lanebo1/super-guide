@@ -1,0 +1,5 @@
+allowLocalFiles: true
+themeSet:
+  - css/black-white.css
+html: true
+pdf: true 

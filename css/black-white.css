@@ -6,9 +6,9 @@
 section {
   background-color: #fff;
   color: #000;
-  font-size: 30px;
-  padding: 55px;
-  line-height: 1.6;
+  font-size: 28px;
+  padding: 50px;
+  line-height: 1.5;
 }
 
 /* Page number */
@@ -38,19 +38,22 @@ section h1 {
 }
 section h2 {
   border-bottom: 2px solid #000;
-  font-size: 1.5em;
+  font-size: 1.4em;
   padding-bottom: 5px;
+  margin-bottom: 0.8em;
 }
 section h3 {
   border-bottom: 1px solid #000;
-  font-size: 1.3em; 
+  font-size: 1.2em; 
   padding-bottom: 5px;
+  margin-bottom: 0.6em;
 }
 
 /* List */
 section ul,
 section ol {
-  padding-left: 2em;
+  padding-left: 1.8em;
+  margin: 0.8em 0;
 }
 
 section ul ul,
@@ -58,6 +61,10 @@ section ul ol,
 section ol ul,
 section ol ol {
   font-size: 0.9em;
+}
+
+section li {
+  margin-bottom: 0.4em;
 }
 
 section ul > li::before {
@@ -74,6 +81,7 @@ section a {
 section pre {
   background-color: #f0f0f0;
   border-radius: 5px;
+  font-size: 0.8em;
 }
 
 section code {
@@ -81,6 +89,7 @@ section code {
   background-color: #f0f0f0;
   padding: 0.2em 0.4em;
   border-radius: 5px;
+  font-size: 0.9em;
 }
 section pre > code {
   padding: 0;
@@ -90,6 +99,9 @@ section pre > code {
 section blockquote {
   border-left: 5px solid #000;
   padding-left: 1.5em;
+  font-style: italic;
+  font-size: 0.9em;
+  margin: 1em 0;
 }
 
 /* Image */
@@ -101,14 +113,18 @@ section p > picture {
 
 /* Table */
 section table {
-  margin: 1.2em 0;
+  margin: 1em 0;
+  font-size: 0.85em;
+  width: 100%;
 }
 section th,
 section td {
-  padding: 0.5em 1em;
+  padding: 0.4em 0.8em;
+  text-align: left;
 }
 section th {
   border-bottom: 2px solid #000;
+  font-weight: bold;
 }
 
 /* Footer */
@@ -135,4 +151,36 @@ section.lead h1 {
 
 section.lead p {
   font-size: 1.5em;
+}
+
+/* Custom classes for specific content types */
+section.dense {
+  font-size: 24px;
+  padding: 40px;
+}
+
+section.compact-list ul {
+  margin: 0.5em 0;
+}
+
+section.compact-list li {
+  margin-bottom: 0.2em;
+}
+
+section.tech-details {
+  font-size: 26px;
+}
+
+section.tech-details h3 {
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+}
+
+section.tech-details ul {
+  margin: 0.5em 0;
+  padding-left: 1.5em;
+}
+
+section.tech-details li {
+  margin-bottom: 0.3em;
 } 
