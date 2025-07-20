@@ -536,33 +536,79 @@ Mikhail
 
 **Kirill Efimovich - DevOps Engineer**
 
-Our DevOps philosophy centers on 🤖 automation, 📦 consistency, and ⚡ rapid, reliable delivery. We've built a robust CI/CD pipeline and infrastructure to support the entire development lifecycle, from code commit to deployment.
+From manual processes to a fully automated pipeline. We engineered a robust DevOps foundation to enable rapid development, consistent testing, and reliable, zero-downtime deployments for the Open Labs Share platform.
 
 ---
 <!-- _class: compact-list -->
 
 ## DevOps: Primary Goals
 
-- 🤖 **Automate Everything**: Eliminate manual steps in building, testing, and deploying to increase efficiency and reduce human error.
-- 📦 **Consistent Environments**: Use Docker to ensure that what works on a developer's machine also works in production.
-- ⚡ **Enable Rapid Feedback**: Automatically deploy every merge to `main` to a live staging environment for immediate testing and user feedback.
-- 🤝 **Streamline Collaboration**: Integrate project management automation to keep the team synchronized.
+- 🤖 **Accelerate Delivery:** Fully automate the build, test, and deployment lifecycle.
+- 📦 **Ensure Stability:** Create reproducible environments with Docker for development and production.
+- ⚡ **Enable Rapid Iteration:** Deploy every change to a live staging environment for immediate feedback.
+- 🤝 **Improve Collaboration:** Use GitOps and project automation to keep the team perfectly synchronized.
 
 ---
-<!-- _class: compact-list -->
 
-## DevOps: Tech Stack & Connections
+## 🔄 The CI/CD Pipeline
 
-A look at the tools that power our automated pipeline.
+<div style="display: flex; justify-content: space-around; text-align: center; gap: 1em;">
+  <div style="flex: 1;">
+    <h3>1. Code & Commit</h3>
+    <p>Developer pushes code to a feature branch.</p>
+  </div>
+  <div style="flex: 1;">
+    <h3>2. Pull Request</h3>
+    <p>Automated checks run via GitHub Actions.</p>
+  </div>
+  <div style="flex: 1;">
+    <h3>3. Merge to Main</h3>
+    <p>Triggers build & push to GHCR.</p>
+  </div>
+  <div style="flex: 1;">
+    <h3>4. Deploy</h3>
+    <p>New version deployed to Staging.</p>
+  </div>
+</div>
 
-- **Automation:** GitHub Actions
-- **Containerization:** Docker & Docker Compose with Bake
-- **Registry:** GitHub Container Registry (GHCR)
-- **Infrastructure:** Self-hosted server with NGINX & HAProxy
-- **Server setup:** Ubuntu 24.04 LTS, 6 CPUs, 16GB RAM, 240GB SSD
-- **Networking:** CloudPub for external access
+<h4>Key GitHub Actions Workflows:</h4>
+<ul>
+  <li><b>Compilation Validation:</b> Ensures all services compile.</li>
+  <li><b>Test Execution:</b> Runs unit & integration tests.</li>
+  <li><b>Docker Build Validation:</b> Validates Docker image builds.</li>
+  <li><b>Deployment Automation:</b> Handles the Blue-Green deployment logic.</li>
+</ul>
 
+---
 
+## 💻 Infrastructure & Deployment
+
+<div style="display: flex; gap: 2em;">
+<div style="flex: 2;">
+<h3>🔵 Green-Blue Strategy 🟢</h3>
+<ul>
+    <li><b>Zero Downtime:</b> Updates are seamless.</li>
+    <li><b>Workflow:</b>
+        <ol type="i">
+            <li>Deploy new version (Green) alongside Production (Blue).</li>
+            <li>Test Green environment internally.</li>
+            <li>Switch HAProxy to route traffic to Green.</li>
+            <li>Keep Blue for instant rollback.</li>
+        </ol>
+    </li>
+</ul>
+</div>
+<div style="flex: 1.2; border-left: 0.5px; padding-left: 2em; margin-bottom: 2em;">
+<h3>🌐 Server & Networking</h3>
+<ul>
+  <li><b>Host:</b> Self-managed server on Ubuntu 24.04</li>
+  <li><b>Specs:</b> 6-Core CPU, 16GB RAM, 240GB SSD</li>
+  <li><b>Proxy:</b> NGINX & HAProxy</li>
+  <li><b>Access:</b> CloudPub for public NAT traversal</li>
+  <li><b>Monitoring:</b> cAdvisor for container metrics</li>
+</ul>
+</div>
+</div>
 
 ---
 <!-- _class: compact-list -->
