@@ -1,186 +1,68 @@
-/* @theme black-white */
 
+/* @theme black-white */
 @import 'default';
 
-/* Page */
+body {
+  background-color: hsl(42, 60%, 94%) !important;
+  font-family: 'Georgia', 'Times New Roman', serif;
+}
+
 section {
-  background-color: #fff;
-  color: #000;
-  font-size: 20px;
-  padding: 50px;
-  line-height: 1.5;
+  background-color: hsl(42, 60%, 94%) !important;
+  color: #3b2f1a;
+  font-size: 26px;
+  padding: 60px;
+  line-height: 1.7;
 }
 
-/* Page number */
-section::after {
-  content: attr(data-marp-pagination) ' / ' attr(data-marp-pagination-total);
-  position: absolute;
-  right: 45px;
-  bottom: 0;
-  color: #fff;
-  font-size: 18px;
-  line-height: 40px;
+section.centered, section.centered * {
+  text-align: center !important;
 }
 
-/* Header */
 section h1,
 section h2,
 section h3,
 section h4,
 section h5,
 section h6 {
-  color: #000;
-  text-align: left;
+  color: #000000;
+  font-family: 'Quicksand', 'Nunito', 'Arial Rounded MT Bold', 'Arial', sans-serif;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.5px;
 }
 section h1 {
-  font-size: 2em;
+  font-size: 2.6em;
   text-align: center;
+  font-weight: 700;
 }
 section h2 {
-  border-bottom: 2px solid #000;
-  font-size: 1.4em;
-  padding-bottom: 5px;
-  margin-bottom: 0.8em;
+  font-size: 1.8em;
+  font-weight: 600;
 }
 section h3 {
-  border-bottom: 1px solid #000;
-  font-size: 1.2em; 
-  padding-bottom: 5px;
-  margin-bottom: 0.6em;
+  font-size: 1.3em;
+  font-weight: 500;
 }
 
-/* List */
 section ul,
 section ol {
-  padding-left: 1.8em;
-  margin: 0.8em 0;
+  padding-left: 2em;
+  margin: 1em 0;
 }
-
-section ul ul,
-section ul ol,
-section ol ul,
-section ol ol {
-  font-size: 0.9em;
-}
-
 section li {
-  margin-bottom: 0.4em;
-}
-
-section ul > li::before {
-  padding-right: 0.3em;
-  color: #000;
-}
-
-/* Link */
-section a {
-  color: #000;
-}
-
-/* Code */
-section pre {
-  background-color: #f0f0f0;
-  border-radius: 5px;
-  font-size: 0.8em;
-}
-
-section code {
-  color: #000;
-  background-color: #f0f0f0;
-  padding: 0.2em 0.4em;
-  border-radius: 5px;
-  font-size: 0.9em;
-}
-section pre > code {
-  padding: 0;
-}
-
-/* Blockquote */
-section blockquote {
-  border-left: 5px solid #000;
-  padding-left: 1.5em;
-  font-style: italic;
-  font-size: 0.9em;
-  margin: 1em 0;
-}
-
-/* Image */
-section p > img,
-section p > picture {
-  display: block;
-  margin: 0 auto;
-}
-
-/* Table */
-section table {
-  margin: 1em 0;
-  font-size: 0.85em;
-  width: 100%;
-}
-section th,
-section td {
-  padding: 0.4em 0.8em;
-  text-align: left;
-}
-section th {
-  border-bottom: 2px solid #000;
-  font-weight: bold;
-}
-
-/* Footer */
-section footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 40px;
-  background-color: #222;
-  color: #fff;
-  font-size: 18px;
-  line-height: 40px;
-  padding: 0 45px;
-  box-sizing: border-box;
-}
-
-section.lead {
-  text-align: center;
-}
-section.lead h1 {
-  font-size: 2.5em;
-}
-
-section.lead p {
-  font-size: 1.5em;
-}
-
-/* Custom classes for specific content types */
-section.dense {
-  font-size: 24px;
-  padding: 40px;
-}
-
-section.compact-list ul {
-  margin: 0.5em 0;
-}
-
-section.compact-list li {
-  margin-bottom: 0.2em;
-}
-
-section.tech-details {
-  font-size: 26px;
-}
-
-section.tech-details h3 {
-  font-size: 1.1em;
   margin-bottom: 0.5em;
 }
 
-section.tech-details ul {
-  margin: 0.5em 0;
-  padding-left: 1.5em;
+section a {
+  color: #a08a5a;
+  text-decoration: none;
+  font-weight: 600;
+}
+section a:hover {
+  color: #6d4c1b;
 }
 
-section.tech-details li {
-  margin-bottom: 0.3em;
-} 
+section.centered, section.centered * {
+  text-align: center !important;
+}

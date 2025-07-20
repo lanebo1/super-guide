@@ -263,15 +263,57 @@ Details to include:
 
 
 ---
-# API Gateway
-Nikita
+<!-- _class: section h1 -->
+
+# 📥API Gateway📤
+
+**Nikita Maksimenko**
+
+The API Gateway centrally coordinates frontend REST API requests, executes business logic, and routes them to backend microservices via gRPC.
 
 ---
-# API Gateway
+<!-- _class: compact-list -->
+
+
+## API Gateway: Core Responsibilities
+
+- ❌ Problem: Multiple services to interact with
+    ⤷ ✅ Solution: API Gateway service
+- 🌐 **Centralized Entry Point**: Serves as the unified access layer for all client REST API requests
+- 🔀 **Request Routing**: Directs incoming requests to the appropriate microservice (`auth`, `user`, `article`, `lab`) via gRPC
+- 🔒 **Authentication & Security**: Validates JWT tokens and user's permissions
+- 📝 **Cross-Cutting Concerns**: Handles logging, request tracing, and error handling for all API traffic
+- 🧠⚙️ **Business Logic Execution**: Aggregating data and enforcing business rules beyond simple routing
+
 
 ---
-# API Gateway
-Nikita
+<!-- _class: compact-list -->
+
+## API Gateway: Communication & Tech
+
+- 📥 Receive data from frontend via REST
+    ⤷ REST is the simplest and most widely supported method for web communication
+- 🛡️ Intercept incoming REST requests for authentication and authorization
+    ⤷ Ensures secure access and centralized permission checks
+- 🔀 Route requests internally to backend microservices via gRPC
+    ⤷ gRPC provides high-speed, type-safe, and scalable service-to-service communication
+- 📤 Return responses to the client through the API Gateway
+    ⤷ Centralizes response handling and error management
+- 🧑‍💻 Use Java 21, Spring Boot 3 (Web, AOP, Doc OpenAPI), gRPC
+    ⤷ Ensures a secure, efficient, and maintainable technology stack for all platform components
+
+---
+<!-- _class: compact-list -->
+
+## API Gateway: Problems & Solutions
+
+- ❌ Too many services and people to communicate with
+    ⤷ ✅ Create clear rules of communication and define issue execution order for efficient collaboration
+- ❌ Unclear models from both frontend and backend
+    ⤷ ✅ Establish detailed requirements for each request step to ensure consistency and clarity
+- ❌ Lack of data checks on frontend
+    ⤷ ✅ Use Jackson validators in request models to enforce data integrity before processing
+
 
 ---
 
