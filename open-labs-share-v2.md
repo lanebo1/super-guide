@@ -399,59 +399,49 @@ The central repository for all laboratory work and student submissions, enabling
 
 ---
 
-# 💬 Feedback Service & Review Engine
 
-**Ravil Kazeev - Algorithms Engineer**
-
-
-This slide is for Ravil to fill with:
-- Feedback service architecture
-- Advanced peer review algorithms
-- Reputation and scoring systems
-- Review quality assurance
-- Anti-spam and fraud detection
-- Analytics and insights engine
-
-
-**[Review engine architecture to be detailed by team member]**
-
----
-
-## Feedback Algorithms & Intelligence
+# 💬 Feedback Service
 
 **Ravil Kazeev**
 
-
-Details to include:
-- Peer review matching algorithms
-- Scoring and ranking systems
-- Quality assessment metrics
-- Bias detection and mitigation
-- Machine learning for review quality
-- A/B testing frameworks
-- Performance analytics
-
-
-**[Algorithm implementation and intelligence details to be added]**
+The Feedback Service centralizes feedback and discussion by managing detailed lab reviews, supporting file attachments, and powering threaded conversations for both labs and articles.
 
 ---
+<!-- _class: compact-list -->
 
-## Feedback Service: Data Engineering
+## Feedback Service: Core Responsibilities
 
-**Ravil Kazeev**
+-   **📝 Comprehensive Feedback System**: Enables reviewers to create, update, and delete detailed feedback on submissions using Markdown for text and code formatting.
+-   **💬 Organized Discussion Section**: Powers a threaded commenting system for both labs and articles. Nested replies keep conversations structured and easy to follow.
+-   **📎 Attachment Handling**: Allows multiple file attachments per feedback entry, using efficient gRPC streaming to handle large uploads and downloads without high memory usage.
 
+---
+<!-- _class: compact-list -->
 
-Details to include:
-- Database design for feedback data
-- Real-time analytics pipeline
-- Data warehousing and ETL
-- Performance monitoring
-- Scalability optimization
-- Data privacy and compliance
-- Reporting and visualization
+## Feedback Service: Tech Stack & Connections
 
+**Go with a multi-storage backend and gRPC API** 🐹💾
 
-**[Data engineering and analytics details to be added]**
+- 🐹 **Go 1.24:**
+&nbsp;&nbsp;&nbsp;⤷ High-performance, concurrent service ideal for I/O-heavy tasks.
+- 🗣️ **gRPC Server:**
+&nbsp;&nbsp;&nbsp;⤷ Provides a typed API for feedback, comments, and file streaming.
+- 🗄️ **Multi-Storage Backend:**
+&nbsp;&nbsp;&nbsp;⤷ **PostgreSQL**: Stores structured feedback metadata.
+&nbsp;&nbsp;&nbsp;⤷ **MongoDB**: Stores unstructured comments and feedback content.
+&nbsp;&nbsp;&nbsp;⤷ **MinIO**: Object storage for all file attachments.
+
+---
+<!-- _class: compact-list -->
+
+## Feedback Service: Problems & Solutions
+
+-   ❌ **Problem:** A single database was inefficient for managing varied data types (metadata, text, and files).
+    ⤷ ✅ **Solution:** Implemented a **multi-storage architecture**, using the best database for each job: PostgreSQL for metadata, MongoDB for comments, and MinIO for file attachments.
+-   ❌ **Problem:** Uploading large files as a single request was unreliable, leading to timeouts and memory errors.
+    ⤷ ✅ **Solution:** Re-architected attachment handling using **gRPC streaming**, which processes files in small chunks for efficient and robust transfers.
+-   ❌ **Problem:** Serving file downloads through the Feedback service would create an unnecessary bottleneck and consume server resources.
+    ⤷ ✅ **Solution:** Configured the MinIO bucket for **public read access**, allowing the service to provide direct file URLs to the frontend and offload all download traffic.
 
 ---
 
