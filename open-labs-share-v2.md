@@ -299,7 +299,7 @@ The API Gateway centrally coordinates frontend REST API requests, executes busin
 
 ---
 
-# 📄 Articles Service
+# 📚 Articles Service 📚
 
 **Timur Salakhov**
 
@@ -307,25 +307,26 @@ The central repository for all scientific articles and research papers, enabling
 
 ---
 
-## 📚 Articles Service: Primary Use Case
+## Articles Service: Primary Use Case
 
 **Manages all articles & assets metadata 🗄️** 
 
 - **📝 Articles Operations:** Provides CRUD for articles details
-- **🗂️ Content Management:**  Stores articles assets in independent storage system
-- **⚙️ Metadata Management** Stores and updates metadata for articles and its assets  
+- **🗂️ Content Management:**  Handles articles assets in independent storage system
+- **⚙️ Metadata Management** Organizes and updates metadata for articles and its assets
+- **🔍 Searching:** Provides articles searching based on its title and abstract 
 
 ---
 
-## ⚙️ Articles Service: Tech Stack & Connections
+## Articles Service: Tech Stack & Connections
 
 **Core Technologies:**
 - **🐍 Programming Language:** Python 3.12
 - **🔄 Inter-service Communication:** gRPC
-- **🗄️ Database:** PostgreSQL via `SQLAlchemy`
+- **🗄️ Database:** PostgreSQL
 - **☁️ Object Storage:** MinIO
 - **🐳 Containerization:** Docker, Docker Compose
-- **⚙️ Config Management:** `python-dotenv`, Environment Variables
+- **⚙️ Config Management:** Environment Variables
 - **🧪 Testing:** Pytest unit-testing
 - **📝 Logging:** Python loggin
 
@@ -336,62 +337,65 @@ The central repository for all scientific articles and research papers, enabling
 
 ---
 
-## 🛠️ Articles Service: Problems & Solutions
+## Articles Service: Problems & Solutions
 
 | ❌ **Problems**                                         | ✅ **Solutions**                                                                                   |
 |--------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 | ❌ Difficult interaction with database via SQL queries | ✅ Use `SQLAlchemy` ORM system for convenient and flexible database interaction  |
-| ❌ Need to organize article files systematically          | ✅ Created structured MinIO bucket organization: `articles/article_id/article.pdf`                  |
-| ❌ Large PDF files causing timeout issues during upload    | ✅ Implemented streaming gRPC uploads for efficient file transfer                                   |
-| ❌ Frontend does searching across articles      | ✅ Moved searching on service and built text search functionality on titles and abstracts with pagination               |
+| ❌ Need to organize article files systematically | ✅ Created structured MinIO bucket organization: `articles/article_id/article.pdf`                  |
+| ❌ Large files causing timeout issues during upload | ✅ Implemented streaming gRPC uploads for efficient file transfer   |
+| ❌ Frontend does searching across articles      | ✅ Moved searching on service and built text search functionality on articles with pagination |
 
 ---
 
-# 🧪 Labs Service & Content Pipeline
-
-**Timur Salakhov - Content Systems Engineer**
-
-
-This slide is for Timur to fill with:
-- Labs service architecture
-- Content management and versioning
-- Advanced file processing pipeline
-- Lab creation and distribution workflow
-- Submission handling system
-- MinIO integration and optimization
-
----
-
-## Labs Service: File Processing Engine
+# 🧪 Labs Service 🧪
 
 **Timur Salakhov**
 
-Details to include:
-- Asynchronous file processing
-- MinIO distributed storage
-- File validation and security scanning
-- Content versioning system
-- Submission workflow automation
-- Performance optimization techniques
-- Error handling and recovery
-
+The central repository for all laboratory work and student submissions, enabling teachers to create assignments and students to submit solutions with comprehensive grading and feedback.
 
 ---
 
-## Labs Service: Performance & Storage
+##  Labs Service: Primary Use Case
 
-**Timur Salakhov**
+**Manages all labs, submissions & educational content 🗄️** 
 
+- **🧪 Labs Operations:** Provides CRUD for lab assignments with tags
+- **📤 Submissions Management:** Handles submissions with text content and file assets
+- **🏷️ Tag System:** Organizes labs with flexible tagging and search capabilities
+- **📊 Grading System:** Tracks submission status and grade workflow
 
-Details to include:
-- Storage optimization strategies
-- CDN integration for content delivery
-- Compression and deduplication
-- Backup and disaster recovery
-- Performance metrics and monitoring
-- Scalability testing results
-- Cost optimization techniques
+---
 
+## Labs Service: Tech Stack & Connections
+
+**Core Technologies:**
+- **🐍 Programming Language:** Python 3.12
+- **🔄 Inter-service Communication:** gRPC
+- **🗄️ Database:** PostgreSQL + MongoDB
+- **☁️ Object Storage:** MinIO
+- **🐳 Containerization:** Docker, Docker Compose
+- **⚙️ Config Management:** Environment Variables
+- **🧪 Testing:** Pytest unit-testing
+- **📝 Logging:** Python logging
+
+**Service Integrations:**
+- **🚪 API Gateway**: Single entry point for all requests
+- **🗄️ PostgreSQL Database**: Store labs, submissions, tags, and assets metadata
+- **📄 MongoDB Database**: Store submission text content for flexible storage
+- **☁️ MinIO Storage System**: Store lab and submission assets in organized buckets
+
+---
+
+## 🛠️ Labs Service: Problems & Solutions
+
+| ❌ **Problems**                                         | ✅ **Solutions**                                                                                   |
+|--------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| ❌ Complex data relationships between labs, submissions, and tags | ✅ Used PostgreSQL and `SQLAlchemy` models with proper foreign keys and many-to-many relationships for structured data management |
+| ❌ Large submission text content causing database bloat | ✅ Implemented hybrid storage: metadata in PostgreSQL, text content in MongoDB for flexibility |
+| ❌ Need to organize files systematically | ✅ Created structured MinIO bucket organization: `labs/lab_id/` and `submissions/submission_id/` |
+| ❌ Frontend does searching across labs | ✅ Moved searching on service and built text and tags search functionality on labs with pagination |
+| ❌ Frontend searches submissions to review | ✅ Moved searching on service and built reviewable submissions retrieval functionality |
 
 ---
 
