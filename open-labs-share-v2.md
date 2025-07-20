@@ -391,7 +391,7 @@ The central repository for all laboratory work and student submissions, enabling
 
 | ❌ **Problems**                                         | ✅ **Solutions**                                                                                   |
 |--------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| ❌ Complex data relationships between labs, submissions, and tags | ✅ Used PostgreSQL and `SQLAlchemy` models with proper foreign keys and many-to-many relationships for structured data management |
+| ❌ Complex data relationships between labs, submissions, and tags | ✅ Used `SQLAlchemy` models with proper foreign keys and many-to-many relationships for structured data management |
 | ❌ Large submission text content causing database bloat | ✅ Implemented hybrid storage: metadata in PostgreSQL, text content in MongoDB for flexibility |
 | ❌ Need to organize files systematically | ✅ Created structured MinIO bucket organization: `labs/lab_id/` and `submissions/submission_id/` |
 | ❌ Frontend does searching across labs | ✅ Moved searching on service and built text and tags search functionality on labs with pagination |
