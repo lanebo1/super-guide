@@ -307,12 +307,13 @@ The central repository for all scientific articles and research papers, enabling
 
 ---
 
-## 📚 Articles Service: Primary Use Cases
+## 📚 Articles Service: Primary Use Case
 
-- **For Authors:** 📝 Publish scientific articles and research papers in PDF format
-- **For Teachers:** 🔗 Link lab assignments with relevant theoretical articles and background materials  
-- **For Students:** 📖 Access scientific articles, download assets for offline study, and search content
-- **Content Management:** 🗂️ CRUD operations for articles and file assets with access control
+**Manages all articles & assets metadata 🗄️** 
+
+- **📝 Articles Operations:** Provides CRUD for articles details
+- **🗂️ Content Management:**  Stores articles assets in independent storage system
+- **⚙️ Metadata Management** Stores and updates metadata for articles and its assets  
 
 ---
 
@@ -320,13 +321,13 @@ The central repository for all scientific articles and research papers, enabling
 
 **Core Technologies:**
 - **🐍 Programming Language:** Python 3.12
-- **🔄 Inter-service Communication:** gRPC (`grpcio`, `grpcio-tools` libraries)
-- **🗄️ Database:** PostgreSQL via SQLAlchemy (`sqlalchemy`, `sqlalchemy-serializer` libraries)
-- **☁️ Object Storage:** MinIO (`minio` library)
+- **🔄 Inter-service Communication:** gRPC
+- **🗄️ Database:** PostgreSQL via `SQLAlchemy`
+- **☁️ Object Storage:** MinIO
 - **🐳 Containerization:** Docker, Docker Compose
 - **⚙️ Config Management:** `python-dotenv`, Environment Variables
-- **🧪 Testing:** Pytest unit-testing (`pytest` library)
-- **📝 Logging:** Python logging (built-in `logging` library)
+- **🧪 Testing:** Pytest unit-testing
+- **📝 Logging:** Python loggin
 
 **Service Integrations:**
 - **🚪 API Gateway**: Receive and return data in gRPC format
