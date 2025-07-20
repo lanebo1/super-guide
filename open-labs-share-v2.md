@@ -303,19 +303,53 @@ The API Gateway centrally coordinates frontend REST API requests, executes busin
 
 ---
 
-# Articles
-Timur
+# 📄 Articles Service
+
+**Timur Salakhov**
+
+The central repository for all scientific articles and research papers, enabling authors to publish content and students to access educational materials.
 
 ---
-# Articles
-Timur
+
+## 📚 Articles Service: Primary Use Cases
+
+- **For Authors:** 📝 Publish scientific articles and research papers in PDF format
+- **For Teachers:** 🔗 Link lab assignments with relevant theoretical articles and background materials  
+- **For Students:** 📖 Access scientific articles, download assets for offline study, and search content
+- **Content Management:** 🗂️ CRUD operations for articles and file assets with access control
 
 ---
 
-# Articles
-Timur
+## ⚙️ Articles Service: Tech Stack & Connections
+
+**Core Technologies:**
+- **🐍 Programming Language:** Python 3.12
+- **🔄 Inter-service Communication:** gRPC (`grpcio`, `grpcio-tools` libraries)
+- **🗄️ Database:** PostgreSQL via SQLAlchemy (`sqlalchemy`, `sqlalchemy-serializer` libraries)
+- **☁️ Object Storage:** MinIO (`minio` library)
+- **🐳 Containerization:** Docker, Docker Compose
+- **⚙️ Config Management:** `python-dotenv`, Environment Variables
+- **🧪 Testing:** Pytest unit-testing (`pytest` library)
+- **📝 Logging:** Python logging (built-in `logging` library)
+
+**Service Integrations:**
+- **🚪 API Gateway**: Receive and return data in gRPC format
+- **🗄️ PostgreSQL Database**: Store all articles and its assets metadata
+- **☁️ MinIO Storage System**: Store all articles assets
 
 ---
+
+## 🛠️ Articles Service: Problems & Solutions
+
+| ❌ **Problems**                                         | ✅ **Solutions**                                                                                   |
+|--------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| ❌ Difficult interaction with database via SQL queries | ✅ Use `SQLAlchemy` ORM system for convenient and flexible database interaction  |
+| ❌ Need to organize article files systematically          | ✅ Created structured MinIO bucket organization: `articles/article_id/article.pdf`                  |
+| ❌ Large PDF files causing timeout issues during upload    | ✅ Implemented streaming gRPC uploads for efficient file transfer                                   |
+| ❌ Frontend does searching across articles      | ✅ Moved searching on service and built text search functionality on titles and abstracts with pagination               |
+
+---
+
 # 🧪 Labs Service & Content Pipeline
 
 **Timur Salakhov - Content Systems Engineer**
