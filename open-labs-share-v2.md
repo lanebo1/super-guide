@@ -146,106 +146,102 @@ A modern web app that lets users explore, contribute, and review labs and articl
 
 ---
 
-# 🔐 Authentication & Security Service
+# 🔐 Authentication Service
 
 **Mikhail Trifonov**
 
-
-This slide is for Mikhail to fill with:
-- Enterprise-grade authentication architecture
-- JWT + OAuth2 implementation
-- Multi-factor authentication
-- Security threat modeling
-- RBAC implementation
-- API security best practices
-- Compliance and audit trails
+Stateless JWT-based authentication microservice providing enterprise-grade security for the entire Open Labs Share ecosystem 🛡️
 
 ---
 
-## Security Infrastructure & Protocols
+## Authentication Service: Primary Use Case
 
-**Mikhail Trifonov**
+**Handles all authentication flows and token lifecycle management for secure access control** 🔑
 
-
-Details to include:
-- Spring Security + JWT architecture
-- OAuth2 flow implementation
-- Password hashing algorithms (bcrypt, etc.)
-- Rate limiting and DDoS protection
-- Session management strategies
-- Security headers implementation
-- Vulnerability assessment results
-- Penetration testing outcomes
+- 🔑 **User Authentication**: `Sign-in/sign-up` with users-service gRPC calls 👤
+- 🎟️ **JWT Generation**: Creates access & refresh `tokens` with user claims 🔐
+- ✅ **Token Validation**: `Verifies` signatures, expiration, and blacklist status 🛡️
+- 🚪 **Session Management**: Logout with token `blacklisting` for security 🏴‍☠️
+- 🛡️ **Security Gateway**: Validates all API requests for `protected` resources 🦝
 
 
 
 ---
 
-## Auth Service: Performance & Scalability
+## Authentication Service: Tech Stack & Connections
 
-**Mikhail Trifonov**
+**Java Spring with gRPC communication and no database 😎**
 
-
-Details to include:
-- Authentication performance metrics
-- Token validation optimization
-- Caching strategies for auth
-- Load testing results
-- Horizontal scaling approach
-- Database optimization for auth
-- Monitoring and alerting setup
-
+- 🏗️ **Java 21 + Spring Boot 3.5:**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⤷ `REST` controller for endpoints
+- 🔐 **Spring Security + JWT:** 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⤷ Token generation with signing and validation, refresh token support
+- 🚀 **gRPC Server/Client:** 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⤷ High-performance calls to Users Service and token validation for API Gateway
+- 💾 **In-Memory Blacklist:** 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⤷ Storage for invalidated tokens for logout functionality
+- 📚 **OpenAPI Docs:** Auto-generated REST API documentation 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⤷ Interactive API documentation for frontend integration and testing
 
 ---
 
-# 👥 Users Service & Core Logic
+## Authentication Service: Problems & Solutions
 
-**Mikhail Trifonov**
-
-
-This slide is for Nikita to fill with:
-- Users service architecture design
-- Profile management system
-- Advanced user roles and permissions
-- Data modeling and relationships
-- Business logic implementation
-- Service integration patterns
+- ❌ **Problem**: Same JWT is still available after user logout
+&nbsp;&nbsp;&nbsp;⤷ ✅ **Solution**: Token `blacklisting` and invalidating on logout 📝
+- ❌ **Problem**: User data consistency between Auth and Users Services
+&nbsp;&nbsp;&nbsp;⤷ ✅ **Solution**: Single `source of truth` in Users Service, Auth Service fetches on-demand and do not store any users data 👮 🤝 🙍‍♂️
+- ❌ **Problem**: Username changes makes current JWT invalid
+&nbsp;&nbsp;&nbsp;⤷ ✅ **Solution**: Token `reissue` logic if that preserves user sessions seamlessly 🛂
 
 
 
 ---
 
-## Users Service: Technical Architecture
+# 👥 Users Service
 
 **Mikhail Trifonov**
 
-
-Details to include:
-- Spring Boot microservice design
-- gRPC service implementation
-- Database schema and optimization
-- User profile data modeling
-- RBAC system implementation
-- Caching strategies
-- Performance benchmarks
+Single source of truth for all user data with profile management and points system 📊
 
 
 
 ---
 
-## Users Service: Integration & Communication
+## Users Service: Primary Use Case
 
-**Mikhail Trifonov**
+**Manages all user data, credentials, and points for solving &reviewing labs** 🎯
+
+- 🆕 **User Registration**: Creates new user accounts 👤
+- 🔐 **Credential Management**: Stores bcrypt-hashed passwords, validates username/email and password
+- 👤 **Profile Operations**: CRUD for user profiles ✏️
+- 🏆 **Points System**: Tracks labs solved/reviewed counts & points balance 💵💰💳
+- 📈 **Data Integrity**: Single source of truth for all user-related information 🐟
 
 
-Details to include:
-- gRPC protocol implementation
-- Service-to-service communication
-- Error handling and retry logic
-- Circuit breaker patterns
-- Distributed tracing
-- Logging and monitoring
-- API versioning strategy
+---
+
+## Users Service: Tech Stack & Connections
+
+**Java with PostgreSQL persistence and gRPC API** ☕🐘
+
+- 🔧 **Java 21 + Spring Boot 3.5:** 
+&nbsp;&nbsp;&nbsp;⤷ `REST` controllers and JPA repositories for user management
+- 🗄️ **PostgreSQL:**
+&nbsp;&nbsp;&nbsp;⤷ Stores user data, credentials, points, and labs solved/reviewd counts
+- 📋 **Flyway:** 
+&nbsp;&nbsp;&nbsp;⤷ Database schema versioning and `migration` management
+- ⚡ **gRPC Server:** 
+&nbsp;&nbsp;&nbsp;⤷ Provides `API` for user validation, data retrieval, and points updates to other microservices
+
+---
+
+## Users Service: Problems & Solutions
+
+- ❌ **Problem**: Create-drop strategy in ORM caused inconsistency when all containers restarted
+&nbsp;&nbsp;&nbsp;⤷ ✅ **Solution**: Flyway for SQL tables creation instead of auto-creation by ORM. Validate strategy 🦜🦅🐦‍⬛🐦
+- ❌ **Problem**: Points system requiring strict control on changes due to its _"money"_ purpose
+&nbsp;&nbsp;&nbsp;⤷ ✅ **Solution**: Transactional methods to prevent inconsistency in balance and counters 🤑
 
 
 ---
@@ -454,18 +450,52 @@ Details to include:
 
 ---
 
-# Marimo 
-Mikhail
+# 📓 Marimo Service
+
+**Mikhail Trifonov**
+
+Dual-architecture microservice providing real-time interactive Python notebook execution powered by Marimo library 🐍🟢
 
 ---
 
-# Marimo
-Mikhail
+## Marimo Service: Primary Use Case
+
+**Interactive code execution and data visualization through cells with Python code** 🔬
+
+- 📝 **Notebook Management**: CRUD operations for marimo components linked to labs/articles 🔗
+- ⏰ **Session Orchestration**: Start/stop interactive Python sessions with TTL 🪦
+- 👟 **Code Execution**: Real-time cell execution with output capture and error handling 🖐️
+- 📊 **Asset Management**: Upload/download datasets and files for notebook use 🐪
+- 🎛️ **Interactive Widgets**: Set of basic Marimo input widgets which value can be used in code (sliders, switchers, text fields, etc.) 📟
+- 📁 **Cross-cells state memory**: Variables and modules from executed cells are availabe in other cells 📦
 
 ---
 
-# Marimo
-Mikhail
+## Marimo Service: Tech Stack & Connections
+
+**Java for metadata management with Python native code execution** ☕🐍
+
+- 🔧 **Java Manager + Python Executor:** 
+&nbsp;&nbsp;&nbsp;⤷ Java handles `REST API` and `metadata` while Python `executes` notebooks
+- 🗄️ **PostgreSQL:** 
+&nbsp;&nbsp;&nbsp;⤷ Tracks notebook metadata, user sessions, and execution trails with TTL cleanup
+- 📦 **MinIO:**
+&nbsp;&nbsp;&nbsp;⤷ Object storage for notebook `files` and user-uploaded `assets`
+- 🔗 **gRPC:**  
+&nbsp;&nbsp;&nbsp;⤷ Java Manager ← `execute requests, session management` → Python Executor
+- 🐍 **Marimo:** Interactive notebook execution with widgets
+&nbsp;&nbsp;&nbsp;⤷ Interactive notebook execution with ✨`widgets`✨
+
+---
+
+## Marimo Service: Problems & Solutions
+
+- ❌ **Problem**: High load on one service to manage metadata, connections with other services, and execution at the same time
+&nbsp;&nbsp;&nbsp;⤷ ✅ **Solution**: Dual-service architecture for management from execution 2️⃣✌️
+- ❌ **Problem**: Managing variables and modules across multiple code cells
+&nbsp;&nbsp;&nbsp;⤷ ✅ **Solution**: Sessions for notebooks to track existing and erased variables/modules 🧹
+- ❌ **Problem**: Marimo widgets incompatibility with our needs and tech
+&nbsp;&nbsp;&nbsp;⤷ ✅ **Solution**: Custom design widgets (but based on Marimo widgets) with configurable behaviour fully under our control 🧩🕹️
 
 ---
 
