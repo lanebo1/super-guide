@@ -3,7 +3,6 @@ marp: true
 theme: black-white
 class: lead
 paginate: true
-footer: 'Open Labs Share - A Collaborative Learning Platform'
 ---
 
 <!-- 
@@ -493,14 +492,6 @@ Mikhail
 
 
 ![alt text](asssets/open-labs-share-ml.drawio.png)
-Details to include:
-- MLOps pipeline design
-- Model serving infrastructure
-- Real-time inference optimization
-- Model monitoring and drift detection
-- Scalability and performance metrics
-- GPU utilization and optimization
-- Cost management for ML workloads
 
 
 ---
@@ -539,70 +530,51 @@ Details to include:
 </div>
 
 ---
+<!-- _class: section h1 -->
 
+# 🚀 DevOps & Cloud Infrastructure
 
-# ⚙️ DevOps & Cloud Infrastructure
+**Kirill Efimovich - DevOps Engineer**
 
-**Kirill Efimovich - Project Manager & DevOps Lead**
+Our DevOps philosophy centers on 🤖 automation, 📦 consistency, and ⚡ rapid, reliable delivery. We've built a robust CI/CD pipeline and infrastructure to support the entire development lifecycle, from code commit to deployment.
 
+---
+<!-- _class: compact-list -->
 
-This slide is for Kirill E. to fill with:
-- Cloud infrastructure overview
-- Container orchestration strategy
-- Service discovery and networking
-- Monitoring and observability
-- Security and compliance
-- Cost optimization
+## DevOps: Primary Goals
+
+- 🤖 **Automate Everything**: Eliminate manual steps in building, testing, and deploying to increase efficiency and reduce human error.
+- 📦 **Consistent Environments**: Use Docker to ensure that what works on a developer's machine also works in production.
+- ⚡ **Enable Rapid Feedback**: Automatically deploy every merge to `main` to a live staging environment for immediate testing and user feedback.
+- 🤝 **Streamline Collaboration**: Integrate project management automation to keep the team synchronized.
+
+---
+<!-- _class: compact-list -->
+
+## DevOps: Tech Stack & Connections
+
+A look at the tools that power our automated pipeline.
+
+- **Automation:** GitHub Actions
+- **Containerization:** Docker & Docker Compose with Bake
+- **Registry:** GitHub Container Registry (GHCR)
+- **Infrastructure:** Self-hosted server with NGINX & HAProxy
+- **Server setup:** Ubuntu 24.04 LTS, 6 CPUs, 16GB RAM, 240GB SSD
+- **Networking:** CloudPub for external access
+
 
 
 ---
+<!-- _class: compact-list -->
 
-## CI/CD Pipeline & Automation
+## DevOps: Problems & Solutions
 
-**Kirill Efimovich**
-
-
-Details to include:
-- GitHub Actions workflow design
-- Automated testing pipeline
-- Docker containerization strategy
-- Environment management (dev/staging/prod)
-- Deployment automation
-- Rollback procedures
-- Quality gates and approvals
-
-
----
-
-## Blue-Green Deployment & Operations
-
-**Kirill Efimovich**
-
-
-Details to include:
-- Blue-green deployment strategy
-- Zero-downtime deployment techniques
-- Health checks and monitoring
-- Disaster recovery procedures
-- Backup and restore processes
-- Performance monitoring tools
-- Incident response procedures
-
-
----
-
-## DevOps Tools & Technology Stack
-
-**Kirill Efimovich**
-
-Details to include:
-- Container orchestration (Docker/K8s)
-- Service mesh implementation
-- Load balancing strategies
-- Database administration
-- Log aggregation and analysis
-- Metrics collection and alerting
-- Cost monitoring and optimization
+- ❌ **Problem:** University network NAT blocked external access to our self-hosted server.
+    ⤷ ✅ **Solution:** After issues with Cloudflare, we successfully used **CloudPub** to create a secure tunnel for public access.
+- ❌ **Problem:** The initial CI/CD pipeline was complex and required many iterations to stabilize.
+    ⤷ ✅ **Solution:** Through persistent, collaborative effort, we developed a set of reliable, modular GitHub Actions workflows.
+- ❌ **Problem:** Risk of downtime during manual deployments.
+    ⤷ ✅ **Solution:** We fully automated the deployment process and are implementing a **Blue-Green strategy** to ensure zero-downtime updates.
 
 ---
 

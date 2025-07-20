@@ -1,15 +1,16 @@
 
 /* @theme black-white */
 @import 'default';
+@import url('https://fonts.googleapis.com/css2?family=Nunito Sans:wght@400;500;600;700&display=swap');
 
 body {
-  background-color: hsl(42, 60%, 94%) !important;
-  font-family: 'Georgia', 'Times New Roman', serif;
+  background-color: #ffffff !important;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 section {
-  background-color: hsl(42, 60%, 94%) !important;
-  color: #3b2f1a;
+  background-color: #ffffff !important;
+  color: #1F2937;
   font-size: 26px;
   padding: 60px;
   line-height: 1.7;
@@ -25,11 +26,11 @@ section h3,
 section h4,
 section h5,
 section h6 {
-  color: #000000;
-  font-family: 'Quicksand', 'Nunito', 'Arial Rounded MT Bold', 'Arial', sans-serif;
+  color: #0D2447;
+  font-family: 'Nunito Sans', sans-serif;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
-  letter-spacing: 0.5px;
+  letter-spacing: 0;
 }
 section h1 {
   font-size: 2.6em;
@@ -54,15 +55,27 @@ section li {
   margin-bottom: 0.5em;
 }
 
+section blockquote {
+  background: #EDF2F7;
+  border-left: 5px solid #3B82F6;
+  margin: 1em 0;
+  padding: 1em 1.5em;
+}
+
 section a {
-  color: #a08a5a;
+  color: #3B82F6;
   text-decoration: none;
   font-weight: 600;
 }
 section a:hover {
-  color: #6d4c1b;
+  color: #1E63D3;
 }
 
 section.centered, section.centered * {
   text-align: center !important;
+}
+
+/* Custom pagination color */
+.marp-pagination {
+  color: #3B82F6 !important;
 }
