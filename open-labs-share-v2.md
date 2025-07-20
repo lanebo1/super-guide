@@ -92,56 +92,43 @@ _footer: 'Practicum project, S25: Aleliya Turushkina, Kirill Efimovich, Nikita M
 
 ---
 
-# 🌐 Frontend Architecture & User Experience
-
-**Aleliya Turushkina - Frontend Architect**
-
-
-This slide is for Aleliya to fill with:
-- Frontend architecture and design patterns
-- React + TypeScript implementation
-- State management strategy
-- Component library and design system
-- Performance optimization techniques
-- User experience design principles
-
-
-**[Frontend architecture to be detailed by team member]**
-
----
-
-## Frontend: Performance & Optimization
+# :sunflower: Frontend
 
 **Aleliya Turushkina**
 
-Details to include:
-- Bundle optimization and code splitting
-- Lazy loading strategies
-- Performance monitoring
-- SEO optimization
-- Accessibility implementation
-- Cross-browser compatibility
-- Mobile responsiveness
-
-**[Performance optimization details to be added]**
+A modern web app that lets users explore, contribute, and review labs and articles through an interactive, user-friendly interface.
 
 ---
 
-## Frontend: API Integration & Real-time Features
+## :mushroom: Frontend: Main user interface for the Open Labs Share
 
-**Aleliya Turushkina**
-
-Details to include:
-- REST API integration patterns
-- WebSocket implementation for real-time features
-- State management (Redux/Zustand)
-- Error handling and user feedback
-- File upload and download UX
-- Progressive Web App features
-- Testing strategies
+- :file_folder: Handles user authentication, profile management, and navigation
+- :book: Enables users to:
+  - Browse, upload, and review labs and articles
+  - Participate in peer review and feedback
+  - Interact with real-time features (e.g., chat, notifications)
 
 
-**[API integration and real-time features to be added]**
+---
+
+## :tulip: Frontend: Tech Stack & Connections
+
+- :sunny: **Frontend:** React, Vite, Tailwind CSS, React Router
+- :seedling: **Component Libraries:** React PDF Viewer, Markdown/KaTeX
+- :earth_africa: **API Integration:**
+    - Communicates with backend via REST API through the API Gateway
+    - Auth, Labs, Articles, Submissions, Feedback, and ML services
+    - Real-time and file download support from MinIO
+
+---
+
+## :blossom: Frontend: Problems & Solutions
+
+- ❌ Lack of viewing of the user's submission and feedback
+     ✅ Downloading files directly from MinIO
+- ❌ Inability to view Markdown using a dark theme
+     ✅ Implemented theme switching and style across the entire platform
+
 
 ---
 
