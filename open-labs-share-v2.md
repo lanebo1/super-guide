@@ -449,43 +449,50 @@ Mikhail
 
 ---
 
-# 🤖 AI/ML Service & Intelligence Platform
+# 🤖 AI Features in Our Service
 
-**Kirill Shumskiy - ML Engineer**
+## Two Powerful Enhancements:
+- 🔍 **AI RAG Assistant**  
+  Context-aware code and documentation helper, leveraging Retrieval-Augmented Generation (RAG) to deliver accurate, real-time support to students.
 
-This slide is for Kirill S. to fill with:
-- ML service architecture and design
-- AI models and algorithms used
-- Training pipeline and data processing
-- Real-time inference system
-- Model deployment and versioning
-- Performance optimization
-
----
-
-## AI Models & Training Pipeline
-
-**Kirill Shumskiy**
-
-
-Details to include:
-- Model selection and evaluation
-- Training data preparation
-- Feature engineering
-- Model training and validation
-- Hyperparameter optimization
-- A/B testing for models
-- Continuous learning implementation
-
+- ✅ **Autograding**  
+  Automated code assessment system for evaluating submissions instantly — ideal for learning platforms.
 
 
 ---
 
-## ML Infrastructure & Deployment
+## AI Models 
 
-**Kirill Shumskiy**
+<div style="display: flex; gap: 2em;">
+
+<div style="flex: 1;">
+<h3>🤖 AI RAG Assistant</h3>
+<ul>
+  <li>Qwen2.5-Coder-1.5B-Instruct (local inference)</li>
+  <li>Qdrant vector store</li>
+  <li>BAAI/bge-small-en-v1.5 embeddings</li>
+</ul>
+</div>
+
+<div style="flex: 1;">
+<h3>✅ Autograding</h3>
+<ul>
+  <li>deepseek-r1-distill-llama-70b (groq inference)</li>
+  <li>Menagerie: A Dataset of Graded CS1 Assignments for evaluation</li>
+  <li>Celery message broker </li>
+</ul>
+</div>
+
+</div>
 
 
+---
+
+## 🚧 ML Infrastructure
+
+
+
+![alt text](asssets/open-labs-share-ml.drawio.png)
 Details to include:
 - MLOps pipeline design
 - Model serving infrastructure
@@ -497,6 +504,42 @@ Details to include:
 
 
 ---
+## ⚙️ ML technical details
+
+
+<div style="display: flex; gap: 2em;">
+
+<div style="flex: 1;">
+<h3>🧩 Backend Architecture</h3>
+<ul>
+  <li>FastAPI-based backend</li>
+  <li>Three-layer structure:
+    <ul>
+      <li>🔹 API Layer (routers, validation)</li>
+      <li>🔹 Service Layer (business logic)</li>
+      <li>🔹 Data Layer (DB / embedding stores)</li>
+    </ul>
+  </li>
+  <li>Dockerized microservices</li>
+  <li>MQ (Celery/Redis for grading)</li>
+</ul>
+</div>
+
+<div style="flex: 1;">
+<h3>🧠 ML + RAG Pipeline</h3>
+<ul>
+  <li>Recursive chunking for long docs</li>
+  <li>Embedding via transformer model (BGE)</li>
+  <li>Vector DB (Qdrant)</li>
+  <li>Relevance thresholding (cosine similarity)</li>
+  <li>RAG with prompt templating for generation</li>
+</ul>
+</div>
+
+</div>
+
+---
+
 
 # ⚙️ DevOps & Cloud Infrastructure
 
