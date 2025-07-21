@@ -8,31 +8,31 @@
 
 ## Kirill Efimovich - Slide #1 - Title Slide & Opening
 
-Good morning, everyone. I'm Kirill Efimovich, the project manager and DevOps engineer for our team. Today we're excited to present Open Labs Share - a next-generation learning platform that bridges the gap between academic theory and real-world industry practice through microservices architecture.
+Good morning, everyone. I'm Kirill, the project manager and DevOps engineer for our team. Today we're excited to present Open Labs Share - a learning platform that bridges the gap between academic and practice through microservices architecture.
 
 ---
 
 ## Kirill Efimovich - Slide #2 - Agenda
 
-Let me walk you through our agenda today. We'll start with the problem statement and our technical vision, introduce our team, and show you a live demo of our platform. Then we'll dive into frontend engineering, explore our advanced system architecture aligned with backend microservices, discuss our ML integration, cover our DevOps things, and then close it up for discussion.
+About agenda. We'll start with the problem and our solve, introduce our team, and show demo. Then we'll dive into frontend engineering, explore our system architecture aligned with backend microservices, discuss our ML integration, cover our DevOps things, and then wrap it up for discussion.
 
 ---
 
 ## Kirill Efimovich - Slide #3 - The Problem: Skills Gap in Tech Education
 
-Our mission was to solve challenges in education technology. We identified several major bottlenecks: limited real-world project experience due to academic focus on theory, inefficient mentor-learner matching without automated skill assessment, and poor feedback loops between industry needs and educational content. Our engineering mission is to build a distributed, scalable platform that efficiently connects industry experts with aspiring developers and young professionals through hands-on technical projects and education.
+We identified key challenges in education technology: limited real-world project experience, inefficient mentor-learner matching, and poor feedback loops between industry and education. Our engineering mission is to build a platform that connects  experts with young developers through hands-on technical projects.
 
 ---
 
 ## Kirill Efimovich - Slide #4 - Meet the Team
 
-Let me introduce our distributed engineering team. We have myself handling project leadership and DevOps engineering, Mikhail Trifonov managing backend engineering and authentication systems, Nikita Maksimenko leading backend engineering and API systems, Timur Salakhov overseeing backend engineering and content systems, Ravil Kazeev working on backend engineering and feedback systems, Kirill Shumskiy developing ML and backend engineering, and Aleliya Turushkina handling design and frontend engineering.
+About us: I've handled project leadership and DevOps engineering, Mikhail managing authentication systems, Nikita designed and implemented API systems, Timur made content systems, Ravil worked on feedback systems, Kirill developed ML and tackeld backend, and Aleliya design.
 
 ---
 
 ## Kirill Efimovich - Slide #5 - Product Vision
 
-Open Labs Share is a modern learning platform that bridges the gap between academia and industry through hands-on technical collaboration. We revolutionize education through four key innovations: streamlined content creation with a version-controlled lab management system enabling experts to publish and maintain high-quality learning materials, guided learning experience with structured submission and review processes that provide meaningful feedback and track progress, smart community building with AI-enhanced assistance for better feedback and user experience, and Marimo elements providing interactive Python notebook execution with widgets for better user experience.
+So, what is Open Labs Share? It is a modern learning platform that bridges the gap between academia and practice. We made it: content creation with a version-controlled lab management system enabling experts to publish and maintain high-quality learning materials, guided learning experience with structured submission and review processes that provide meaningful feedback and track progress, smart community building with AI-enhanced assistance for better feedback and user experience, and Marimo elements providing interactive Python notebook execution with widgets for better user experience.
 
 ---
 

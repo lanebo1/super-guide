@@ -71,10 +71,10 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 **Open Labs Share** - A modern learning platform that bridges the gap between academia and industry through hands-on technical collaboration.
 
 **We revolutionize education by:**
-- 📝 **Streamlined Content Creation:** Version-controlled lab management system enabling experts to publish and maintain high-quality learning materials
-- 🎯 **Guided Learning Experience:** Structured submission and review process that provides meaningful feedback and tracks progress
+- 📝 **Streamlined Content Creation:** Lab and Article systems enabling experts to publish and maintain high-quality learning materials
+- 🎯 **Guided Learning Experience:** Structured submission and review process that provides meaningful feedback
 - 🧠 **Smart Community Building:** AI-enhanced assistance for better feedback and user experience
-- 🐍 **Marimo elements:** Interactive Python notebook execution with widgets for better user experience
+- 🐍 **Marimo elements:** Interactive Python notebook execution with widgets for deep understanding of the material
 
 ---
 
