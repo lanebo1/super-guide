@@ -83,7 +83,7 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 **Open Labs Share** - A microservices-driven learning ecosystem with AI-powered assistance.
 
 - 🏗️ **Microservices:** Separate services for labs, articles, feedback etc.
-- 🛒 **gRPC:** Fast and reliable inter-service communication
+- 🚀 **gRPC:** Fast and reliable inter-service communication
 - 🧠 **ML Services:** ML powered feedback and chat
 
 ---
