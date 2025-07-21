@@ -7,96 +7,114 @@ paginate: true
 
 <!-- 
 _class: lead
-_footer: 'Practicum project, S25: Aleliya Turushkina, Kirill Efimovich, Nikita Maksimenko, Timur Salakhov, Ravil Kazeev, Mikhail Trifonov, Kirill Shumskiy' 
+_footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleliya Turushkina, Mikhail Trifonov, Nikita Maksimenko, Timur Salakhov, Ravil Kazeev, Kirill Shumskiy</h1>' 
 -->
 
-# 🚀 Open Labs Share
+<div style="display: flex; align-items: center; gap: 2em;">
+<div style="flex: 0 0 auto;">
+<img src="openlabsshare-logo.jpg" alt="Open Labs Share Logo" style="width: 300px; height: 300px; border-radius: 20px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); border: 3px solid #ffffff;">
+</div>
+<div style="flex: 1; text-align: center;">
+<h1>Open Labs Share</h1>
+<h2>Next-Gen Learning Platform: Microservices Meets Education</h2>
+</div>
+</div>
 
-**Next-Gen Learning Platform: Microservices Meets Education**
-
----
-
-## Agenda
-
-- **Problem Statement & Technical Vision**
-- **Team intro**
-- **Demo**
-- **Frontend Engineering & UX**
-- **Advanced System Architecture**
-- **Backend Microservices Deep Dive**
-- **AI/ML Innovation & Intelligence**
-- **DevOps & Cloud Infrastructure**
-- **Discussion**
 
 ---
 
-## The Problem: Skills Gap in Tech Education
+## 📋 Agenda
 
-**Engineering challenges in education technology:**
-
-- **Scalability bottlenecks** in traditional learning management systems
-- **Limited real-world project experience** due to academic focus on theory
-- **Inefficient mentor-learner matching** without automated skill assessment
-- **Poor feedback loops** between industry needs and educational content
-
-**Our engineering mission:** Build a distributed, scalable platform that efficiently connects industry experts with aspiring developers through hands-on technical projects.
+- **Problem Statement & Technical Vision** 👓
+- **Team intro** 👨‍💻
+- **Demo** 🎥
+- **Frontend Engineering & UX** 🔚
+- **Advanced System Architecture** ⛩️
+- **Backend Microservices Deep Dive** 🤿
+- **ML integration** ֎
+- **DevOps & Cloud Infrastructure** ☁︎
+- **Discussion** ⚔️
 
 ---
 
 <!-- _class: compact-list -->
 
-## Technical Leadership & Ownership
+## 🚨 The Problem: Skills Gap in Tech Education
 
-**Distributed engineering team with specialized technical domains:**
+**Engineering challenges in education technology:**
 
-- **Kirill Efimovich (PM/DevOps)** - *Infrastructure Architecture & Project Leadership*
-- **Mikhail Trifonov** - *Security Engineering & Authentication Systems*
-- **Nikita Maksimenko** - *Backend Architecture & Core Services*
-- **Timur Salakhov** - *Content Pipeline & Storage Systems*
-- **Ravil Kazeev** - *Algorithms Engineering & Review Systems*
-- **Kirill Shumskiy** - *AI/ML Engineering & Intelligence Systems*
-- **Aleliya Turushkina** - *Frontend Architecture & User Experience*
+- 🍾 **Scalability bottlenecks** in traditional learning management systems
+- 🚧 **Limited real-world project experience** due to academic focus on theory
+- 💼 **Inefficient mentor-learner matching** without automated skill assessment
+- 💌 **Poor feedback loops** between industry needs and educational content
+
+💎 **Our engineering mission:** Build a distributed, scalable platform that efficiently connects industry experts with aspiring developers and young professionals through hands-on technical projects and education.
 
 ---
 
-## Our Product Vision
+<!-- _class: compact-list -->
+
+## 🔰 Meet the team
+
+- 🌁 **Kirill Efimovich (PM/DevOps)** - *Project Leadership & DevOps Engineer*
+- 🔒 **Mikhail Trifonov** - *Backend Engineer & Authentication Systems*
+- 🏗️ **Nikita Maksimenko** - *Backend Engineer & API System*
+- 📚 **Timur Salakhov** - *Backend Engineer & Content Systems* 
+- ⚙️ **Ravil Kazeev** - *Backend Engineer & Feedback Systems*
+- 🤖 **Kirill Shumskiy** - *ML & Backend Engineer*
+- 🎨 **Aleliya Turushkina** - *Designer & Frontend Engineer*
+
+---
+
+## 🚚 Product Vision 
 
 **Open Labs Share** - A modern learning platform that bridges the gap between academia and industry through hands-on technical collaboration.
 
 **We revolutionize education by:**
-- **Streamlined Content Creation:** Version-controlled lab management system enabling experts to publish and maintain high-quality learning materials
-- **Guided Learning Experience:** Structured submission and review process that provides meaningful feedback and tracks progress
-- **Smart Community Building:** AI-enhanced networking that connects learners with relevant peers and mentors based on skills and interests
+- 📝 **Streamlined Content Creation:** Version-controlled lab management system enabling experts to publish and maintain high-quality learning materials
+- 🎯 **Guided Learning Experience:** Structured submission and review process that provides meaningful feedback and tracks progress
+- 🧠 **Smart Community Building:** AI-enhanced assistance for better feedback and user experience
+- 🐍 **Marimo elements:** Interactive Python notebook execution with widgets for better user experience
 
 ---
 
-## Our Technical Vision
+## 👾 Technical Vision
 
-**Open Labs Share** - A cloud-native, microservices-driven learning ecosystem with intelligent matching and AI-powered assistance.
+**Open Labs Share** - A microservices-driven learning ecosystem with AI-powered assistance.
 
-**We transform learning through:**
-- **Expert Content Pipeline:** Git-inspired versioning system for lab content with automated distribution
-- **Learner Development Workflow:** CI/CD-like submission pipeline with automated validation and feedback routing
-- **Intelligent Community:** ML-driven peer matching and reputation-based quality assurance systems
+- 🏗️ **Microservices:** Separate services for labs, articles, feedback etc.
+- 🛒 **gRPC:** Fast and reliable inter-service communication
+- 🧠 **ML Services:** ML powered feedback and chat
+
 ---
 
 <!-- _class: compact-list -->
 
-## Live Technical Demo Walkthrough
+## Live Technical Demo: Core Features
 
-1.  **Secure Authentication:** OAuth2/JWT with multi-factor authentication demo
-2.  **Intelligent Lab Discovery:** ML-powered recommendations and search
-3.  **Advanced Development Workflow:** Real-time collaboration and submission pipeline
-4.  **Intelligent Review Engine:** AI-assisted peer matching and quality scoring
-5.  **Analytics Dashboard:** Real-time metrics and performance insights
+**Interactive walkthrough of platform capabilities:**
+
+1. 🔐 **Secure Authentication:** OAuth2/JWT with multi-factor authentication demo
+2. 🔍 **Intelligent Lab Discovery:** ML-powered recommendations and search
+3. ⚡ **Advanced Development Workflow:** Real-time collaboration and submission pipeline
+4. 🧠 **Intelligent Review Engine:** AI-assisted peer matching and quality scoring
+5. 📊 **Analytics Dashboard:** Real-time metrics and performance insights
+
+
+ЗДЕСЬ ДОЛЖНО БЫТЬ ДЕМО
 
 ---
 
-# :sunflower: Frontend
+<!-- _class: centered -->
 
-**Aleliya Turushkina**
+# :sunflower: Frontend Architecture
 
-A modern web app that lets users explore, contribute, and review labs and articles through an interactive, user-friendly interface.
+<div style="background: #EDF2F7; border-left: 5px solid #3B82F6; margin: 1em 0; padding: 1em 1.5em; border-radius: 8px;">
+<h4>A modern web app that lets users explore and review labs and articles through an interactive, user-friendly interface, bridging the gap between complex backend systems and user-friendly experience.</h4>
+</div>
+<div style="text-align: center;">
+<span style="font-size: 1.3em; color: #0D2447;"> Aleliya Turushkina (Frontend Engineer)</span>
+</div>
 
 ---
 
@@ -124,21 +142,17 @@ A modern web app that lets users explore, contribute, and review labs and articl
 
 ## :blossom: Frontend: Problems & Solutions
 
-- ❌ Lack of viewing of the user's submission and feedback
-     ✅ Downloading files directly from MinIO
-- ❌ Inability to view Markdown using a dark theme
-     ✅ Implemented theme switching and style across the entire platform
+| ❌ **Problems**                                         | ✅ **Solutions**                                                                                   |
+|--------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| ❌ Lack of viewing of the user's submission and feedback | ✅ Downloading files directly from MinIO                                                          |
+| ❌ Inability to view Markdown using a dark theme        | ✅ Implemented theme switching and style across the entire platform                               |
 
-
----
-
-## Lets go to backend
 ---
 <!-- _class: tech-details -->
 
 ## Advanced System Architecture
 
-**Cloud-native architecture designed for high availability and horizontal scaling**
+**Architecture designed for high availability and horizontal scaling**
 
 ```mermaid
 
@@ -148,9 +162,12 @@ A modern web app that lets users explore, contribute, and review labs and articl
 
 # 🔐 Authentication Service
 
-**Mikhail Trifonov**
-
-Stateless JWT-based authentication microservice providing enterprise-grade security for the entire Open Labs Share ecosystem 🛡️
+<div style="background: #EDF2F7; border-left: 5px solid #3B82F6; margin: 1em 0; padding: 1em 1.5em; border-radius: 8px;">
+<h4>Stateless JWT-based authentication microservice providing enterprise-grade security for the entire Open Labs Share ecosystem 🛡️</h4>
+</div>
+<div style="text-align: center;">
+<span style="font-size: 1.3em; color: #0D2447;"> Mikhail Trifonov (Backend Engineer)</span>
+</div>
 
 ---
 
@@ -158,20 +175,18 @@ Stateless JWT-based authentication microservice providing enterprise-grade secur
 
 **Handles all authentication flows and token lifecycle management for secure access control** 🔑
 
-- 🔑 **User Authentication**: `Sign-in/sign-up` with users-service gRPC calls 👤
-- 🎟️ **JWT Generation**: Creates access & refresh `tokens` with user claims 🔐
-- ✅ **Token Validation**: `Verifies` signatures, expiration, and blacklist status 🛡️
-- 🚪 **Session Management**: Logout with token `blacklisting` for security 🏴‍☠️
-- 🛡️ **Security Gateway**: Validates all API requests for `protected` resources 🦝
-
-
+- 🔑 **User Authentication:** `sign-in/sign-up` with users-service gRPC calls 👤
+- 🎟️ **JWT Generation:** Creates access & refresh `tokens` with user claims 🔐
+- ✅ **Token Validation:** `Verifies` signatures, expiration, and blacklist status 🛡️
+- 🚪 **Session Management:** Logout with token `blacklisting` for security 🏴‍☠️
+- 🛡️ **Security Gateway:** Validates all API requests for `protected` resources 🦝
 
 ---
 
+<!-- _class: compact-list -->
+
 ## Authentication Service: Tech Stack & Connections
-
-**Java Spring with gRPC communication and no database 😎**
-
+**Java Spring with gRPC communication and no database** 😎
 - 🏗️ **Java 21 + Spring Boot 3.5:**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⤷ `REST` controller for endpoints
 - 🔐 **Spring Security + JWT:** 
@@ -187,37 +202,34 @@ Stateless JWT-based authentication microservice providing enterprise-grade secur
 
 ## Authentication Service: Problems & Solutions
 
-- ❌ **Problem**: Same JWT is still available after user logout
-&nbsp;&nbsp;&nbsp;⤷ ✅ **Solution**: Token `blacklisting` and invalidating on logout 📝
-- ❌ **Problem**: User data consistency between Auth and Users Services
-&nbsp;&nbsp;&nbsp;⤷ ✅ **Solution**: Single `source of truth` in Users Service, Auth Service fetches on-demand and do not store any users data 👮 🤝 🙍‍♂️
-- ❌ **Problem**: Username changes makes current JWT invalid
-&nbsp;&nbsp;&nbsp;⤷ ✅ **Solution**: Token `reissue` logic if that preserves user sessions seamlessly 🛂
-
-
+| ❌ **Problems**                                         | ✅ **Solutions**                                                                                   |
+|--------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| ❌ Same JWT is still available after user logout      | ✅ Token `blacklisting` and invalidating on logout 📝                                              |
+| ❌ User data consistency between Auth and Users Services | ✅ Single `source of truth` in Users Service, Auth Service fetches on-demand and do not store any users data 👮 🤝 🙍‍♂️ |
+| ❌ Username changes makes current JWT invalid            | ✅ Token `reissue` logic if that preserves user sessions seamlessly 🛂                            |
 
 ---
 
 # 👥 Users Service
 
-**Mikhail Trifonov**
-
-Single source of truth for all user data with profile management and points system 📊
-
-
+<div style="background: #EDF2F7; border-left: 5px solid #3B82F6; margin: 1em 0; padding: 1em 1.5em; border-radius: 8px;">
+<h4>Single source of truth for all user data with profile management and points system 📊</h4>
+</div>
+<div style="text-align: center;">
+<span style="font-size: 1.3em; color: #0D2447;"> Mikhail Trifonov (Backend Engineer)</span>
+</div>
 
 ---
 
 ## Users Service: Primary Use Case
 
-**Manages all user data, credentials, and points for solving &reviewing labs** 🎯
+**Manages all user data, credentials, and points for solving & reviewing labs** 🎯
 
-- 🆕 **User Registration**: Creates new user accounts 👤
-- 🔐 **Credential Management**: Stores bcrypt-hashed passwords, validates username/email and password
-- 👤 **Profile Operations**: CRUD for user profiles ✏️
-- 🏆 **Points System**: Tracks labs solved/reviewed counts & points balance 💵💰💳
-- 📈 **Data Integrity**: Single source of truth for all user-related information 🐟
-
+- 🆕 **User Registration:** Creates new user accounts 👤
+- 🔐 **Credential Management:** Stores bcrypt-hashed passwords, validates username/email and password
+- 👤 **Profile Operations:** CRUD for user profiles ✏️
+- 🏆 **Points System:** Tracks labs solved/reviewed counts & points balance 💵💰💳
+- 📈 **Data Integrity:** Single source of truth for all user-related information 🐟
 
 ---
 
@@ -228,7 +240,7 @@ Single source of truth for all user data with profile management and points syst
 - 🔧 **Java 21 + Spring Boot 3.5:** 
 &nbsp;&nbsp;&nbsp;⤷ `REST` controllers and JPA repositories for user management
 - 🗄️ **PostgreSQL:**
-&nbsp;&nbsp;&nbsp;⤷ Stores user data, credentials, points, and labs solved/reviewd counts
+&nbsp;&nbsp;&nbsp;⤷ Stores user data, credentials, points, and labs solved/reviewed counts
 - 📋 **Flyway:** 
 &nbsp;&nbsp;&nbsp;⤷ Database schema versioning and `migration` management
 - ⚡ **gRPC Server:** 
@@ -238,102 +250,97 @@ Single source of truth for all user data with profile management and points syst
 
 ## Users Service: Problems & Solutions
 
-- ❌ **Problem**: Create-drop strategy in ORM caused inconsistency when all containers restarted
-&nbsp;&nbsp;&nbsp;⤷ ✅ **Solution**: Flyway for SQL tables creation instead of auto-creation by ORM. Validate strategy 🦜🦅🐦‍⬛🐦
-- ❌ **Problem**: Points system requiring strict control on changes due to its _"money"_ purpose
-&nbsp;&nbsp;&nbsp;⤷ ✅ **Solution**: Transactional methods to prevent inconsistency in balance and counters 🤑
+| ❌ **Problems**                                         | ✅ **Solutions**                                                                                   |
+|--------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| ❌ Create-drop strategy in ORM caused inconsistency when all containers restarted | ✅ Flyway for SQL tables creation instead of auto-creation by ORM. Validate strategy 🦜🦅🐦‍⬛🐦 |
+| ❌ Points system requiring strict control on changes due to its _"money"_ purpose | ✅ Transactional methods to prevent inconsistency in balance and counters 🤑                         |
 
 
 ---
-<!-- _class: section h1 -->
 
-# 📥API Gateway📤
+# 📥 API Gateway 📤
 
-**Nikita Maksimenko**
-
-The API Gateway centrally coordinates frontend REST API requests, executes business logic, and routes them to backend microservices via gRPC.
-
----
-<!-- _class: compact-list -->
-
-
-## API Gateway: Core Responsibilities
-
-- ❌ Problem: Multiple services to interact with
-    ⤷ ✅ Solution: API Gateway service
-- 🌐 **Centralized Entry Point**: Serves as the unified access layer for all client REST API requests
-- 🔀 **Request Routing**: Directs incoming requests to the appropriate microservice (`auth`, `user`, `article`, `lab`) via gRPC
-- 🔒 **Authentication & Security**: Validates JWT tokens and user's permissions
-- 📝 **Cross-Cutting Concerns**: Handles logging, request tracing, and error handling for all API traffic
-- 🧠⚙️ **Business Logic Execution**: Aggregating data and enforcing business rules beyond simple routing
-
+<div style="background: #EDF2F7; border-left: 5px solid #3B82F6; margin: 1em 0; padding: 1em 1.5em; border-radius: 8px;">
+<h4>The API Gateway centrally coordinates frontend REST API requests, executes business logic, and routes them to backend microservices via gRPC</h4>
+</div>
+<div style="text-align: center;">
+<span style="font-size: 1.3em; color: #0D2447;"> Nikita Maksimenko (Backend Engineer)</span>
+</div>
 
 ---
-<!-- _class: compact-list -->
 
-## API Gateway: Communication & Tech
+## API Gateway: Primary Use Case
 
-- 📥 Receive data from frontend via REST
+**Centralized entry point and request orchestration for all client interactions** 🌐
+
+- 🌐 **Centralized Entry Point:** Serves as the unified access layer for all client REST API requests
+- 🔀 **Request Routing:** Directs incoming requests to the appropriate microservice (`auth`, `user`, `article`, `lab`) via gRPC
+- 🔒 **Authentication & Security:** Validates JWT tokens and user's permissions
+- 📝 **Cross-Cutting Concerns:** Handles logging, request tracing, and error handling for all API traffic
+- 🧠 **Business Logic Execution:** Aggregating data and enforcing business rules beyond simple routing
+
+---
+
+## API Gateway: Tech Stack & Connections
+
+**Java Spring Boot with REST-to-gRPC translation** ☕🔄
+
+- 📥 **REST API:** Receive data from frontend via REST
     ⤷ REST is the simplest and most widely supported method for web communication
-- 🛡️ Intercept incoming REST requests for authentication and authorization
+- 🛡️ **Security Layer:** Intercept incoming REST requests for authentication and authorization
     ⤷ Ensures secure access and centralized permission checks
-- 🔀 Route requests internally to backend microservices via gRPC
+- 🔀 **gRPC Client:** Route requests internally to backend microservices via gRPC
     ⤷ gRPC provides high-speed, type-safe, and scalable service-to-service communication
-- 📤 Return responses to the client through the API Gateway
+- 📤 **Response Handling:** Return responses to the client through the API Gateway
     ⤷ Centralizes response handling and error management
-- 🧑‍💻 Use Java 21, Spring Boot 3 (Web, AOP, Doc OpenAPI), gRPC
+- 🧑‍💻 **Technology Stack:** Java 21, Spring Boot 3 (Web, AOP, Doc OpenAPI), gRPC
     ⤷ Ensures a secure, efficient, and maintainable technology stack for all platform components
 
 ---
-<!-- _class: compact-list -->
 
 ## API Gateway: Problems & Solutions
 
-- ❌ Too many services and people to communicate with
-    ⤷ ✅ Create clear rules of communication and define issue execution order for efficient collaboration
-- ❌ Unclear models from both frontend and backend
-    ⤷ ✅ Establish detailed requirements for each request step to ensure consistency and clarity
-- ❌ Lack of data checks on frontend
-    ⤷ ✅ Use Jackson validators in request models to enforce data integrity before processing
-
+| ❌ **Problems**                                  | ✅ **Solutions**                                                                            |
+|--------------------------------------------------|---------------------------------------------------------------------------------------------|
+| ❌ Too many services and people to communicate with | ✅ Create clear rules of communication and define issue execution order for efficient collaboration |
+| ❌ Unclear models from both frontend and backend    | ✅ Establish detailed requirements for each request step to ensure consistency and clarity   |
+| ❌ Lack of data checks on frontend                | ✅ Use Jackson validators in request models to enforce data integrity before processing        |
 
 ---
 
-# 📚 Articles Service 📚
+# 📚 Articles Service
 
-**Timur Salakhov**
-
-The central repository for all scientific articles and research papers, enabling authors to publish content and students to access educational materials.
+<div style="background: #EDF2F7; border-left: 5px solid #3B82F6; margin: 1em 0; padding: 1em 1.5em; border-radius: 8px;">
+<h4>The central repository for all scientific articles and research papers, enabling authors to publish content and students to access educational materials.</h4>
+</div>
+<div style="text-align: center;">
+<span style="font-size: 1.3em; color: #0D2447;"> Timur Salakhov (Backend Engineer)</span>
+</div>
 
 ---
 
 ## Articles Service: Primary Use Case
 
-**Manages all articles & assets metadata 🗄️** 
+**Manages all articles & assets metadata** 🗄️
 
-- **📝 Articles Operations:** Provides CRUD for articles details
-- **🗂️ Content Management:**  Handles articles assets in independent storage system
-- **⚙️ Metadata Management** Organizes and updates metadata for articles and its assets
-- **🔍 Searching:** Provides articles searching based on its title and abstract 
+- 📝 **Articles Operations:** Provides CRUD for articles details
+- 🗂️ **Content Management:** Handles articles assets in independent storage system
+- ⚙️ **Metadata Management:** Organizes and updates metadata for articles and its assets
+- 🔍 **Searching:** Provides articles searching based on its title and abstract
 
 ---
 
 ## Articles Service: Tech Stack & Connections
 
-**Core Technologies:**
-- **🐍 Programming Language:** Python 3.12
-- **🔄 Inter-service Communication:** gRPC
-- **🗄️ Database:** PostgreSQL
-- **☁️ Object Storage:** MinIO
-- **🐳 Containerization:** Docker, Docker Compose
-- **⚙️ Config Management:** Environment Variables
-- **🧪 Testing:** Pytest unit-testing
-- **📝 Logging:** Python loggin
+**Python-based microservice with PostgreSQL and MinIO storage** 🐍
+
+- 🐍 **Programming Language:** Python 3.12
+- 🔄 **Inter-service Communication:** gRPC
 
 **Service Integrations:**
-- **🚪 API Gateway**: Receive and return data in gRPC format
-- **🗄️ PostgreSQL Database**: Store all articles and its assets metadata
-- **☁️ MinIO Storage System**: Store all articles assets
+- 🚪 **API Gateway:** Receive and return data in gRPC format
+- 🗄️ **PostgreSQL Database:** Store all articles and its assets metadata
+- ☁️ **MinIO Storage System:** Store all articles assets
 
 ---
 
@@ -348,108 +355,108 @@ The central repository for all scientific articles and research papers, enabling
 
 ---
 
-# 🧪 Labs Service 🧪
+# 📚 Labs Service
 
-**Timur Salakhov**
-
-The central repository for all laboratory work and student submissions, enabling teachers to create assignments and students to submit solutions with comprehensive grading and feedback.
+<div style="background: #EDF2F7; border-left: 5px solid #3B82F6; margin: 1em 0; padding: 1em 1.5em; border-radius: 8px;">
+<h4>The central repository for all laboratory work and student submissions, enabling teachers to create assignments and students to submit solutions with comprehensive grading and feedback.</h4>
+</div>
+<div style="text-align: center;">
+<span style="font-size: 1.3em; color: #0D2447;"> Timur Salakhov (Backend Engineer)</span>
+</div>
 
 ---
 
-##  Labs Service: Primary Use Case
+## Labs Service: Primary Use Case
 
-**Manages all labs, submissions & educational content 🗄️** 
+**Manages all labs, submissions & educational content** 🗄️
 
-- **🧪 Labs Operations:** Provides CRUD for lab assignments with tags
-- **📤 Submissions Management:** Handles submissions with text content and file assets
-- **🏷️ Tag System:** Organizes labs with flexible tagging and search capabilities
-- **📊 Grading System:** Tracks submission status and grade workflow
+- 📚 **Labs Operations:** Provides CRUD for lab assignments with tags
+- 📤 **Submissions Management:** Handles submissions with text content and file assets
+- 🏷️ **Tag System:** Organizes labs with flexible tagging and search capabilities
+- 📊 **Grading System:** Tracks submission status and grade workflow
 
 ---
 
 ## Labs Service: Tech Stack & Connections
 
-**Core Technologies:**
-- **🐍 Programming Language:** Python 3.12
-- **🔄 Inter-service Communication:** gRPC
-- **🗄️ Database:** PostgreSQL + MongoDB
-- **☁️ Object Storage:** MinIO
-- **🐳 Containerization:** Docker, Docker Compose
-- **⚙️ Config Management:** Environment Variables
-- **🧪 Testing:** Pytest unit-testing
-- **📝 Logging:** Python logging
+**Python with hybrid database architecture and MinIO storage** 🐍
+
+- 🐍 **Programming Language:** Python 3.12
+- 🔄 **Inter-service Communication:** gRPC
 
 **Service Integrations:**
-- **🚪 API Gateway**: Single entry point for all requests
-- **🗄️ PostgreSQL Database**: Store labs, submissions, tags, and assets metadata
-- **📄 MongoDB Database**: Store submission text content for flexible storage
-- **☁️ MinIO Storage System**: Store lab and submission assets in organized buckets
+- 🚪 **API Gateway:** Single entry point for all requests
+- 🗄️ **PostgreSQL Database:** Store labs, submissions, tags, and assets metadata
+- 📄 **MongoDB Database:** Store submission text content for flexible storage
+- ☁️ **MinIO Storage System:** Store lab and submission assets in organized buckets
 
 ---
 
-## 🛠️ Labs Service: Problems & Solutions
+## Labs Service: Problems & Solutions
 
 | ❌ **Problems**                                         | ✅ **Solutions**                                                                                   |
 |--------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 | ❌ Complex data relationships between labs, submissions, and tags | ✅ Used `SQLAlchemy` models with proper foreign keys and many-to-many relationships for structured data management |
 | ❌ Large submission text content causing database bloat | ✅ Implemented hybrid storage: metadata in PostgreSQL, text content in MongoDB for flexibility |
 | ❌ Need to organize files systematically | ✅ Created structured MinIO bucket organization: `labs/lab_id/` and `submissions/submission_id/` |
-| ❌ Frontend does searching across labs | ✅ Moved searching on service and built text and tags search functionality on labs with pagination |
-| ❌ Frontend searches submissions to review | ✅ Moved searching on service and built reviewable submissions retrieval functionality |
+
 
 ---
-
 
 # 💬 Feedback Service
 
-**Ravil Kazeev**
-
-The Feedback Service centralizes feedback and discussion by managing detailed lab reviews, supporting file attachments, and powering threaded conversations for both labs and articles.
-
----
-<!-- _class: compact-list -->
-
-## Feedback Service: Core Responsibilities
-
--   **📝 Comprehensive Feedback System**: Enables reviewers to create, update, and delete detailed feedback on submissions using Markdown for text and code formatting.
--   **💬 Organized Discussion Section**: Powers a threaded commenting system for both labs and articles. Nested replies keep conversations structured and easy to follow.
--   **📎 Attachment Handling**: Allows multiple file attachments per feedback entry, using efficient gRPC streaming to handle large uploads and downloads without high memory usage.
+<div style="background: #EDF2F7; border-left: 5px solid #3B82F6; margin: 1em 0; padding: 1em 1.5em; border-radius: 8px;">
+<h4>The Feedback Service centralizes feedback and discussion by managing detailed lab reviews, supporting file attachments, and powering threaded conversations for both labs and articles</h4>
+</div>
+<div style="text-align: center;">
+<span style="font-size: 1.3em; color: #0D2447;"> Ravil Kazeev (Backend Engineer)</span>
+</div>
 
 ---
-<!-- _class: compact-list -->
+
+## Feedback Service: Primary Use Case
+
+**Comprehensive feedback and discussion management system** 💬
+
+- 📝 **Comprehensive Feedback System:** Enables reviewers to create, update, and delete detailed feedback on submissions using Markdown for text and code formatting
+- 💬 **Organized Discussion Section:** Powers a threaded commenting system for both labs and articles. Nested replies keep conversations structured and easy to follow
+- 📎 **Attachment Handling:** Allows multiple file attachments per feedback entry, using efficient gRPC streaming to handle large uploads and downloads without high memory usage
+
+---
 
 ## Feedback Service: Tech Stack & Connections
 
 **Go with a multi-storage backend and gRPC API** 🐹💾
 
 - 🐹 **Go 1.24:**
-&nbsp;&nbsp;&nbsp;⤷ High-performance, concurrent service ideal for I/O-heavy tasks.
+&nbsp;&nbsp;&nbsp;⤷ High-performance, concurrent service ideal for I/O-heavy tasks
 - 🗣️ **gRPC Server:**
-&nbsp;&nbsp;&nbsp;⤷ Provides a typed API for feedback, comments, and file streaming.
+&nbsp;&nbsp;&nbsp;⤷ Provides a typed API for feedback, comments, and file streaming
 - 🗄️ **Multi-Storage Backend:**
-&nbsp;&nbsp;&nbsp;⤷ **PostgreSQL**: Stores structured feedback metadata.
-&nbsp;&nbsp;&nbsp;⤷ **MongoDB**: Stores unstructured comments and feedback content.
-&nbsp;&nbsp;&nbsp;⤷ **MinIO**: Object storage for all file attachments.
+&nbsp;&nbsp;&nbsp;⤷ **PostgreSQL:** Stores structured feedback metadata
+&nbsp;&nbsp;&nbsp;⤷ **MongoDB:** Stores unstructured comments and feedback content
+&nbsp;&nbsp;&nbsp;⤷ **MinIO:** Object storage for all file attachments
 
 ---
-<!-- _class: compact-list -->
 
 ## Feedback Service: Problems & Solutions
 
--   ❌ **Problem:** A single database was inefficient for managing varied data types (metadata, text, and files).
-    ⤷ ✅ **Solution:** Implemented a **multi-storage architecture**, using the best database for each job: PostgreSQL for metadata, MongoDB for comments, and MinIO for file attachments.
--   ❌ **Problem:** Uploading large files as a single request was unreliable, leading to timeouts and memory errors.
-    ⤷ ✅ **Solution:** Re-architected attachment handling using **gRPC streaming**, which processes files in small chunks for efficient and robust transfers.
--   ❌ **Problem:** Serving file downloads through the Feedback service would create an unnecessary bottleneck and consume server resources.
-    ⤷ ✅ **Solution:** Configured the MinIO bucket for **public read access**, allowing the service to provide direct file URLs to the frontend and offload all download traffic.
+| ❌ **Problems**                                         | ✅ **Solutions**                                                                                   |
+|--------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| ❌ A single database was inefficient for managing varied data types (metadata, text, and files). | ✅ Implemented a **multi-storage architecture**, using the best database for each job: PostgreSQL for metadata, MongoDB for comments, and MinIO for file attachments. |
+| ❌ Uploading large files as a single request was unreliable, leading to timeouts and memory errors. | ✅ Re-architected attachment handling using **gRPC streaming**, which processes files in small chunks for efficient and robust transfers. |
+| ❌ File downloads through the Feedback service would create a bottleneck | ✅ Configured the MinIO bucket for **public read access**, allowing the service to provide direct file URLs to the frontend and offload all download traffic. |
 
 ---
 
 # 📓 Marimo Service
 
-**Mikhail Trifonov**
-
-Dual-architecture microservice providing real-time interactive Python notebook execution powered by Marimo library 🐍🟢
+<div style="background: #EDF2F7; border-left: 5px solid #3B82F6; margin: 1em 0; padding: 1em 1.5em; border-radius: 8px;">
+<h4>Dual-architecture microservice providing real-time interactive Python notebook execution powered by Marimo library 🐍🟢</h4>
+</div>
+<div style="text-align: center;">
+<span style="font-size: 1.3em; color: #0D2447;"> Mikhail Trifonov (Backend Engineer)</span>
+</div>
 
 ---
 
@@ -457,12 +464,12 @@ Dual-architecture microservice providing real-time interactive Python notebook e
 
 **Interactive code execution and data visualization through cells with Python code** 🔬
 
-- 📝 **Notebook Management**: CRUD operations for marimo components linked to labs/articles 🔗
-- ⏰ **Session Orchestration**: Start/stop interactive Python sessions with TTL 🪦
-- 👟 **Code Execution**: Real-time cell execution with output capture and error handling 🖐️
-- 📊 **Asset Management**: Upload/download datasets and files for notebook use 🐪
-- 🎛️ **Interactive Widgets**: Set of basic Marimo input widgets which value can be used in code (sliders, switchers, text fields, etc.) 📟
-- 📁 **Cross-cells state memory**: Variables and modules from executed cells are availabe in other cells 📦
+- 📝 **Notebook Management:** CRUD operations for marimo components linked to labs/articles 🔗
+- ⏰ **Session Orchestration:** Start/stop interactive Python sessions with TTL 🪦
+- 👟 **Code Execution:** Real-time cell execution with output capture and error handling 🖐️
+- 📊 **Asset Management:** Upload/download datasets and files for notebook use 🐪
+- 🎛️ **Interactive Widgets:** Set of basic Marimo input widgets which value can be used in code (sliders, switchers, text fields, etc.) 📟
+- 📁 **Cross-cells state memory:** Variables and modules from executed cells are available in other cells 📦
 
 ---
 
@@ -485,83 +492,73 @@ Dual-architecture microservice providing real-time interactive Python notebook e
 
 ## Marimo Service: Problems & Solutions
 
-- ❌ **Problem**: High load on one service to manage metadata, connections with other services, and execution at the same time
-&nbsp;&nbsp;&nbsp;⤷ ✅ **Solution**: Dual-service architecture for management from execution 2️⃣✌️
-- ❌ **Problem**: Managing variables and modules across multiple code cells
-&nbsp;&nbsp;&nbsp;⤷ ✅ **Solution**: Sessions for notebooks to track existing and erased variables/modules 🧹
-- ❌ **Problem**: Marimo widgets incompatibility with our needs and tech
-&nbsp;&nbsp;&nbsp;⤷ ✅ **Solution**: Custom design widgets (but based on Marimo widgets) with configurable behaviour fully under our control 🧩🕹️
+| ❌ **Problems**                                         | ✅ **Solutions**                                                                                   |
+|--------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| ❌ High load on one service to manage metadata, connections with other services, and execution at the same time | ✅ Dual-service architecture for management from execution 2️⃣✌️                                |
+| ❌ Managing variables and modules across multiple code cells | ✅ Sessions for notebooks to track existing and erased variables/modules 🧹                       |
+| ❌ Marimo widgets incompatibility with our needs and tech | ✅ Custom design widgets (but based on Marimo widgets) with configurable behaviour fully under our control 🧩🕹️ |
 
 ---
 
-# 🤖 AI Features in Our Service
+# 🤖 ML Service
 
-## Two Powerful Enhancements:
-- 🔍 **AI RAG Assistant**  
-  Context-aware code and documentation helper, leveraging Retrieval-Augmented Generation (RAG) to deliver accurate, real-time support to students.
-
-- ✅ **Autograding**  
-  Automated code assessment system for evaluating submissions instantly — ideal for learning platforms.
-
+<div style="background: #EDF2F7; border-left: 5px solid #3B82F6; margin: 1em 0; padding: 1em 1.5em; border-radius: 8px;">
+<h4>Advanced AI-powered features providing intelligent assistance and automated grading capabilities for enhanced learning experience</h4>
+</div>
+<div style="text-align: center;">
+<span style="font-size: 1.3em; color: #0D2447;"> Kirill Shumskiy (ML Engineer)</span>
+</div>
 
 ---
 
-## AI Models 
+## ML Service: Primary Use Case
+
+**Two powerful AI enhancements for the learning platform** 🧠
+
+- 🔍 **AI RAG Assistant:** Context-aware code and documentation helper, leveraging Retrieval-Augmented Generation (RAG) to deliver accurate, real-time support to students
+- ✅ **Autograding:** Automated code assessment system for evaluating submissions instantly — ideal for learning platforms
+
+---
+
+<!-- _class: compact-list -->
+
+## ML Service: Tech Stack & Connections
+
+**FastAPI backend with specialized AI models and infrastructure** 🐍🤖
 
 <div style="display: flex; gap: 2em;">
-
 <div style="flex: 1;">
-<h3>🤖 AI RAG Assistant</h3>
+<h4>🤖 AI RAG Assistant</h4>
 <ul>
   <li>Qwen2.5-Coder-1.5B-Instruct (local inference)</li>
   <li>Qdrant vector store</li>
   <li>BAAI/bge-small-en-v1.5 embeddings</li>
 </ul>
 </div>
-
 <div style="flex: 1;">
-<h3>✅ Autograding</h3>
+<h4>✅ Autograding</h4>
 <ul>
   <li>deepseek-r1-distill-llama-70b (groq inference)</li>
-  <li>Menagerie: A Dataset of Graded CS1 Assignments for evaluation</li>
-  <li>Celery message broker </li>
+  <li>Menagerie dataset: Graded CS1 Assignments for evaluation</li>
 </ul>
 </div>
-
+</div>
 </div>
 
+**Core Architecture:**
+🐍 **FastAPI-based backend** with three-layer structure 
+🥬 **Celery** for asynchronous tasks
+🛢️ **Redis** for caching and message broker
 
 ---
 
-## 🚧 ML Infrastructure
-
+## ML Service: Infrastructure
 
 
 ![alt text](asssets/open-labs-share-ml.drawio.png)
 
-
----
-## ⚙️ ML technical details
-
-
+**Technical Details:**
 <div style="display: flex; gap: 2em;">
-
-<div style="flex: 1;">
-<h3>🧩 Backend Architecture</h3>
-<ul>
-  <li>FastAPI-based backend</li>
-  <li>Three-layer structure:
-    <ul>
-      <li>🔹 API Layer (routers, validation)</li>
-      <li>🔹 Service Layer (business logic)</li>
-      <li>🔹 Data Layer (DB / embedding stores)</li>
-    </ul>
-  </li>
-  <li>Dockerized microservices</li>
-  <li>MQ (Celery/Redis for grading)</li>
-</ul>
-</div>
-
 <div style="flex: 1;">
 <h3>🧠 ML + RAG Pipeline</h3>
 <ul>
@@ -572,80 +569,60 @@ Dual-architecture microservice providing real-time interactive Python notebook e
   <li>RAG with prompt templating for generation</li>
 </ul>
 </div>
-
 </div>
 
 ---
-<!-- _class: section h1 -->
 
-# 🚀 DevOps & Cloud Infrastructure
+# 🏙️ DevOps & Infrastructure
 
-**Kirill Efimovich - DevOps Engineer**
-
-From manual processes to a fully automated pipeline. We engineered a robust DevOps foundation to enable rapid development, consistent testing, and reliable, zero-downtime deployments for the Open Labs Share platform.
-
----
-<!-- _class: compact-list -->
-
-## DevOps: Primary Goals
-
-- 🤖 **Accelerate Delivery:** Fully automate the build, test, and deployment lifecycle.
-- 📦 **Ensure Stability:** Create reproducible environments with Docker for development and production.
-- ⚡ **Enable Rapid Iteration:** Deploy every change to a live staging environment for immediate feedback.
-- 🤝 **Improve Collaboration:** Use GitOps and project automation to keep the team perfectly synchronized.
-
----
-
-## 🔄 The CI/CD Pipeline
-
-<div style="display: flex; justify-content: space-around; text-align: center; gap: 1em;">
-  <div style="flex: 1;">
-    <h3>1. Code & Commit</h3>
-    <p>Developer pushes code to a feature branch.</p>
-  </div>
-  <div style="flex: 1;">
-    <h3>2. Pull Request</h3>
-    <p>Automated checks run via GitHub Actions.</p>
-  </div>
-  <div style="flex: 1;">
-    <h3>3. Merge to Main</h3>
-    <p>Triggers build & push to GHCR.</p>
-  </div>
-  <div style="flex: 1;">
-    <h3>4. Deploy</h3>
-    <p>New version deployed to Staging.</p>
-  </div>
+<div style="background: #EDF2F7; border-left: 5px solid #3B82F6; margin: 1em 0; padding: 1em 1.5em; border-radius: 8px;">
+<h4>From manual processes to a fully automated pipeline. Robust DevOps foundation to enable rapid development, consistent testing, and reliable, zero-downtime deployments for our platform.</h4>
+</div>
+<div style="text-align: center;">
+<span style="font-size: 1.3em; color: #0D2447;"> Kirill Efimovich (DevOps Engineer)</span>
 </div>
 
-<h4>Key GitHub Actions Workflows:</h4>
-<ul>
-  <li><b>Compilation Validation:</b> Ensures all services compile.</li>
-  <li><b>Test Execution:</b> Runs unit & integration tests.</li>
-  <li><b>Docker Build Validation:</b> Validates Docker image builds.</li>
-  <li><b>Deployment Automation:</b> Handles the Blue-Green deployment logic.</li>
-</ul>
+---
+
+## 🏛️ DevOps: Primary Use Case
+
+**Automated deployment pipeline and infrastructure management** 🌆
+
+- 🤖 **Accelerate Delivery:** Fully automate the build, test, and deployment lifecycle
+- 📦 **Ensure Stability:** Create reproducible environments with Docker for development and production
+- 🧰 **Team help tools** to automate issues managing and PR notifiers to keep the team perfectly synchronized
 
 ---
 
-## 💻 Infrastructure & Deployment
+## 🛣️ DevOps: Tech Stack & Connections
+
+**Key GitHub Actions Workflows:** 💫
+- 🔧 **Compilation Validation:** Ensures all services compile
+- 🏏 **Test Execution:** Runs unit & integration tests
+- 🐳 **Docker Build Validation:** Buillds, validates and pushes images to GHCR
+- ✈️ **Deployment Automation:** Handles the Blue-Green deployment logic
+
+---
+
+## 🛤️ DevOps: Infrastructure
 
 <div style="display: flex; gap: 2em;">
 <div style="flex: 2;">
 <h3>🔵 Green-Blue Strategy 🟢</h3>
 <ul>
-    <li><b>Zero Downtime:</b> Updates are seamless.</li>
-    <li><b>Workflow:</b>
+    <li><b> 0️⃣ Zero Downtime:</b> Updates are seamless</li>
+    <li><b>🎞️ Workflow:</b>
         <ol type="i">
-            <li>Deploy new version (Green) alongside Production (Blue).</li>
-            <li>Test Green environment internally.</li>
-            <li>Switch HAProxy to route traffic to Green.</li>
-            <li>Keep Blue for instant rollback.</li>
+            <li>Deploy new version (Green) alongside Production (Blue)</li>
+            <li>Test Green environment internally</li>
+            <li>Switch HAProxy to route traffic to Green</li>
+            <li>Keep Blue for instant rollback</li>
         </ol>
     </li>
 </ul>
 </div>
-<div style="flex: 1.2; border-left: 0.5px; padding-left: 2em; margin-bottom: 2em;">
-<h3>🌐 Server & Networking</h3>
+<div style="flex: 2; border-left: 0.5px; padding-left: 2em; margin-bottom: 2em;">
+<h3>🐧 Server & Networking</h3>
 <ul>
   <li><b>Host:</b> Self-managed server on Ubuntu 24.04</li>
   <li><b>Specs:</b> 6-Core CPU, 16GB RAM, 240GB SSD</li>
@@ -657,46 +634,18 @@ From manual processes to a fully automated pipeline. We engineered a robust DevO
 </div>
 
 ---
-<!-- _class: compact-list -->
 
-## DevOps: Problems & Solutions
+## 🏚️ DevOps: Problems & Solutions
 
-- ❌ **Problem:** University network NAT blocked external access to our self-hosted server.
-    ⤷ ✅ **Solution:** After issues with Cloudflare, we successfully used **CloudPub** to create a secure tunnel for public access.
-- ❌ **Problem:** The initial CI/CD pipeline was complex and required many iterations to stabilize.
-    ⤷ ✅ **Solution:** Through persistent, collaborative effort, we developed a set of reliable, modular GitHub Actions workflows.
-- ❌ **Problem:** Risk of downtime during manual deployments.
-    ⤷ ✅ **Solution:** We fully automated the deployment process and are implementing a **Blue-Green strategy** to ensure zero-downtime updates.
-
----
-
-## Engineering Challenges: Real-World Solutions (засунуть на каждую секцию)
-
-### **1. Polyglot Microservices at Scale**
-- **Challenge:** Type-safe communication between Java, Go, and Python services
-- **Solution:** Protocol Buffers + gRPC code generation with automated API contracts
-- **Metrics:** 40% latency reduction, 99.9% type safety, zero breaking changes in 6 months
-
-### **2. Real-Time Collaboration Infrastructure**
-- **Challenge:** Live coding sessions with sub-second latency for global users
-- **Solution:** WebSocket clustering with Redis pub/sub and geographic load balancing
-- **Metrics:** <100ms global latency, supports 1000+ concurrent sessions
-
-### **3. AI-Driven Content Intelligence**
-- **Challenge:** Contextual lab recommendations and intelligent Q&A at scale
-- **Solution:** Vector embeddings + semantic search with incremental model training
-- **Metrics:** 85% recommendation accuracy, 2-second response time for complex queries
+| ❌ **Problems**                                         | ✅ **Solutions**                                                                                   |
+|--------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| ❌ University network NAT blocked external access to our self-hosted server. | ✅ After issues with Cloudflare, we successfully used **CloudPub** to create a secure tunnel for public access. |
+| ❌ The initial CI/CD pipeline was complex and required many iterations to stabilize. | ✅ Through persistent, collaborative effort, we developed a set of reliable, modular GitHub Actions workflows. |
+| ❌ Risk of downtime during manual deployments. | ✅ We fully automated the deployment process and are implementing a **Blue-Green strategy** to ensure zero-downtime updates. |
 
 ---
 
 <!-- _class: lead -->
 
-# 🚀 Technical Innovation Showcase
-
-**Q&A / Deep Technical Discussion**
-
----
-
-**Explore the Engineering:**
-- **Architecture & Code:** [github.com/IU-Capstone-Project-2025/open-labs-share](https://github.com/IU-Capstone-Project-2025/open-labs-share)
-- **Live Technical Demo:** [open-labs-share.online](https://open-labs-share.online/) 
+<h1>Thank you!</h1>
+<h4 style="text-align: center; font-size: 1.2em; color: #0D2447;">We're glad to hear your questions! 🛒🤗🎸</h4>
