@@ -60,7 +60,7 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 - 🔒 **Mikhail Trifonov** - *Backend Engineer & Authentication Systems*
 - 🏗️ **Nikita Maksimenko** - *Backend Engineer & API System*
 - 📚 **Timur Salakhov** - *Backend Engineer & Content Systems* 
-- ⚙️ **Ravil Kazeev** - *Backend Engineer & Feedback Systems*
+- 💌 **Ravil Kazeev** - *Backend Engineer & Feedback Systems*
 - 🤖 **Kirill Shumskiy** - *ML & Backend Engineer*
 - 🎨 **Aleliya Turushkina** - *Designer & Frontend Engineer*
 
