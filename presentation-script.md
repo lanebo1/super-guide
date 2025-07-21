@@ -32,13 +32,13 @@ About us: I've handled project leadership and DevOps engineering, Mikhail managi
 
 ## Kirill Efimovich - Slide #5 - Product Vision
 
-So, what is Open Labs Share? It is a modern learning platform that bridges the gap between academia and practice. We made it: content creation with a version-controlled lab management system enabling experts to publish and maintain high-quality learning materials, guided learning experience with structured submission and review processes that provide meaningful feedback and track progress, smart community building with AI-enhanced assistance for better feedback and user experience, and Marimo elements providing interactive Python notebook execution with widgets for better user experience.
+So, what is Open Labs Share as a product? It is a modern learning platform that bridges the gap between academia and practice. We made it: content creation for high-quality learning materials, improved learning experience with structured review processes. With Marimo elements and chat and code autograding powered by ML services we created something that is not just a learning platform, but a learning experience.
 
 ---
 
 ## Kirill Efimovich - Slide #6 - Technical Vision
 
-From a technical perspective, Open Labs Share is a microservices-driven learning ecosystem with AI-powered assistance. We have separate services for labs, articles, feedback and more, connected through fast and reliable gRPC inter-service communication, all powered by ML services that provide ML-powered feedback and chat capabilities.
+From a technical perspective, Open Labs Share is a microservices learning ecosystem with AI-powered assistance. We have separate services for labs, articles, feedback and more, connected through fast and reliable gRPC inter-service communication. Included Marimo elements and chat and code autograding ML services are also part of the ecosystem.
 
 ---
 
@@ -274,37 +274,37 @@ From a technical perspective, Open Labs Share is a microservices-driven learning
 
 ## Kirill Efimovich - Slide #45 - DevOps & Infrastructure (Title)
 
-Our DevOps infrastructure represents a journey from manual processes to a fully automated pipeline. We engineered a robust DevOps foundation to enable rapid development, consistent testing, and reliable, zero-downtime deployments for our platform. Reliable infrastructure is invisible when it works perfectly, and I built our DevOps pipeline to be so robust and automated that developers can focus on innovation, not deployment worries.
+Our DevOps infrastructure built as fully automated pipeline. We engineered a robust DevOps foundation to enable rapid development, automated testing, and our beautiflul deployment.
 
 ---
 
 ## Kirill Efimovich - Slide #46 - DevOps: Primary Use Case
 
-Our automated deployment pipeline and infrastructure management accelerates delivery by fully automating the build, test, and deployment lifecycle. We ensure stability by creating reproducible environments with Docker for development and production. We also provide team help tools to automate issues managing and PR notifiers to keep the team perfectly synchronized.
+Our automated deployment pipeline and infrastructure management accelerates delivery by fully automating the build, test, and deployment lifecycle. We ensure stability by creating reproducible environments with Docker for development and production. We also provide team help tools to automate issues managing and PR notifiers to keep the team in sync.
 
 ---
 
 ## Kirill Efimovich - Slide #47 - DevOps: Tech Stack & Connections
 
-Key GitHub Actions workflows include compilation validation ensuring all services compile, test execution running unit and integration tests, Docker build validation that builds, validates and pushes images to GHCR, and deployment automation that handles the Blue-Green deployment logic.
+GitHub Actions workflows include services compilation validation, test execution. Also, Docker build validation that builds, validates and pushes images to GHCR as a part of the deployment pipeline, and deployment itslef that handles the Blue-Green deployment logic.
 
 ---
 
 ## Kirill Efimovich - Slide #48 - DevOps: Infrastructure
 
-Our infrastructure uses a Green-Blue strategy providing zero downtime with seamless updates. The workflow deploys new versions Green alongside Production Blue, tests Green environment internally, switches HAProxy to route traffic to Green, and keeps Blue for instant rollback. Our server and networking setup includes a self-managed server on Ubuntu 24.04 with 6-Core CPU, 16GB RAM, and 240GB SSD. We use NGINX and HAProxy for proxying, CloudPub for public NAT traversal, and cAdvisor for container metrics.
+Our infrastructure uses a Green-Blue strategy providing zero downtime with seamless updates. The workflow deploys new versions Green alongside Blue, tests Green environment internally, switches proxy to route traffic to Green, and keeps Blue for instant rollback. Our hardware setup includes a self-managed server on Ubuntu with decent stats. We use NGINX and HAProxy for proxying and CloudPub for public NAT traversal.
 
 ---
 
 ## Kirill Efimovich - Slide #49 - DevOps: Problems & Solutions
 
-We resolved three critical problems: university network NAT blocking external access to our self-hosted server, solved by using CloudPub to create a secure tunnel for public access after issues with Cloudflare. The initial CI/CD pipeline being complex and requiring many iterations to stabilize, resolved through persistent, collaborative effort developing reliable, modular GitHub Actions workflows. Risk of downtime during manual deployments, addressed by fully automating the deployment process and implementing a Blue-Green strategy ensuring zero-downtime updates.
+We resolved three critical problems: university network NAT blocked external access to our self-hosted server, solved by using CloudPub to create a tunnel for public access. The initial CI pipeline was complex -> resolved through teammates feedback and improvements. Risk of downtime during manual deployments, addressed by implementing a Blue-Green strategy ensuring zero-downtime updates.
 
 ---
 
 ## Kirill Efimovich - Slide #50 - Thank You & Q&A
 
-In conclusion, Open Labs Share represents a comprehensive solution to modern educational technology challenges. We've built a scalable, secure, and intelligent platform that bridges the gap between academic learning and industry practice. Our microservices architecture enables independent scaling and maintenance, our AI-powered features provide intelligent assistance and automated assessment, and our robust DevOps pipeline ensures reliable, continuous delivery. The platform is live and operational at open-labs-share.online. We're now ready to answer any questions you may have about our technical implementation, architecture decisions, or future development plans.
+And, wrapping it up, we're now ready to answer any questions you may have about our technical implementation, architecture decisions, or future development plans.
 
 ---
 
