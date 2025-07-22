@@ -288,16 +288,16 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 **Java Spring Boot with REST-to-gRPC translation** ☕🔄
 
-- 📥 **REST API:** Receive data from frontend via REST
+- 📥 **REST API:**
     ⤷ REST is the simplest and most widely supported method for web communication
-- 🛡️ **Security Layer:** Intercept incoming REST requests for authentication and authorization
-    ⤷ Ensures secure access and centralized permission checks
-- 🔀 **gRPC Client:** Route requests internally to backend microservices via gRPC
+- 🛡️ **Security Layer:**
+    ⤷ Intercept incoming REST requests for authentication and authorization
+- 🔀 **gRPC Client:** 
     ⤷ gRPC provides high-speed, type-safe, and scalable service-to-service communication
-- 📤 **Response Handling:** Return responses to the client through the API Gateway
-    ⤷ Centralizes response handling and error management
-- 🧑‍💻 **Technology Stack:** Java 21, Spring Boot 3 (Web, AOP, Doc OpenAPI), gRPC
-    ⤷ Ensures a secure, efficient, and maintainable technology stack for all platform components
+- 📤 **Response Handling:** 
+    ⤷ Centralizes response handling and error management over the whole backend
+- 🧑‍💻 **Java 21 + Spring Framework:** 
+    ⤷ REST API, gRPC, Jackson Validators, Spring AOP
 
 ---
 
