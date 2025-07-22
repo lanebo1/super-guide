@@ -105,13 +105,18 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-<!-- _class: centered -->
+<img src="image.png" alt="Frontend Architecture Diagram" style="max-width: 90%; height: auto; display: block; margin: 0 auto;">
 
-# :sunflower: Frontend Architecture
+---
 
-<div style="background: #EDF2F7; border-left: 5px solid #3B82F6; margin: 1em 0; padding: 1em 1.5em; border-radius: 8px;">
-<h4>A modern web app that lets users explore and review labs and articles through an interactive, user-friendly interface, bridging the gap between complex backend systems and user-friendly experience.</h4>
-</div>
+<h2> 🌻 Frontend </h2> <style>
+  h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #0D2447;
+  }
+</style>
+<img src="frontend.png" alt="Frontend Architecture Diagram" style="max-width: 80%; height: 80%; display: block; margin: 0 auto; margin-top: 20px;">
 <div style="text-align: center;">
 <span style="font-size: 1.3em; color: #0D2447;"> Aleliya Turushkina (Frontend Engineer)</span>
 </div>
@@ -149,15 +154,14 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-![alt text](image.png)
-
----
-
-# 🔐 Authentication Service
-
-<div style="background: #EDF2F7; border-left: 5px solid #3B82F6; margin: 1em 0; padding: 1em 1.5em; border-radius: 8px;">
-<h4>Stateless JWT-based authentication microservice providing enterprise-grade security for the entire Open Labs Share ecosystem 🛡️</h4>
-</div>
+<h2>🔐 Authentication Service </h2> <style>
+  h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #0D2447;
+  }
+</style>
+<img src="auth.png" alt="Frontend Architecture Diagram" style="max-width: 80%; height: 80%; display: block; margin: 0 auto;">
 <div style="text-align: center;">
 <span style="font-size: 1.3em; color: #0D2447;"> Mikhail Trifonov (Backend Engineer)</span>
 </div>
@@ -203,11 +207,14 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-# 👥 Users Service
-
-<div style="background: #EDF2F7; border-left: 5px solid #3B82F6; margin: 1em 0; padding: 1em 1.5em; border-radius: 8px;">
-<h4>Single source of truth for all user data with profile management and points system 📊</h4>
-</div>
+<h2>👥 Users Service </h2> <style>
+  h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #0D2447;
+  }
+</style>
+<img src="users.png" alt="Users Service Architecture Diagram" style="max-width: 80%; height: 80%; display: block; margin: 0 auto;">
 <div style="text-align: center;">
 <span style="font-size: 1.3em; color: #0D2447;"> Mikhail Trifonov (Backend Engineer)</span>
 </div>
@@ -251,11 +258,14 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-# 📥 API Gateway 📤
-
-<div style="background: #EDF2F7; border-left: 5px solid #3B82F6; margin: 1em 0; padding: 1em 1.5em; border-radius: 8px;">
-<h4>The API Gateway centrally coordinates frontend REST API requests, executes business logic, and routes them to backend microservices via gRPC</h4>
-</div>
+<h2>📥 API Gateway 📤 </h2> <style>
+  h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #0D2447;
+  }
+</style>
+<img src="api.png" alt="API Gateway Architecture Diagram" style="max-width: 80%; height: 80%; display: block; margin: 0 auto;">
 <div style="text-align: center;">
 <span style="font-size: 1.3em; color: #0D2447;"> Nikita Maksimenko (Backend Engineer)</span>
 </div>
@@ -301,11 +311,14 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-# 📚 Articles Service
-
-<div style="background: #EDF2F7; border-left: 5px solid #3B82F6; margin: 1em 0; padding: 1em 1.5em; border-radius: 8px;">
-<h4>The central repository for all scientific articles and research papers, enabling authors to publish content and students to access educational materials.</h4>
-</div>
+<h2>📚 Articles Service </h2> <style>
+  h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #0D2447;
+  }
+</style>
+<img src="articles.png" alt="Articles Service Architecture Diagram" style="max-width: 80%; height: 80%; display: block; margin: 0 auto;">
 <div style="text-align: center;">
 <span style="font-size: 1.3em; color: #0D2447;"> Timur Salakhov (Backend Engineer)</span>
 </div>
@@ -348,11 +361,14 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-# 📚 Labs Service
-
-<div style="background: #EDF2F7; border-left: 5px solid #3B82F6; margin: 1em 0; padding: 1em 1.5em; border-radius: 8px;">
-<h4>The central repository for all laboratory work and student submissions, enabling teachers to create assignments and students to submit solutions with comprehensive grading and feedback.</h4>
-</div>
+<h2>📚 Labs Service </h2> <style>
+  h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #0D2447;
+  }
+</style>
+<img src="labs.png" alt="Labs Service Architecture Diagram" style="max-width: 80%; height: 80%; display: block; margin: 0 auto;">
 <div style="text-align: center;">
 <span style="font-size: 1.3em; color: #0D2447;"> Timur Salakhov (Backend Engineer)</span>
 </div>
@@ -396,11 +412,14 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-# 💬 Feedback Service
-
-<div style="background: #EDF2F7; border-left: 5px solid #3B82F6; margin: 1em 0; padding: 1em 1.5em; border-radius: 8px;">
-<h4>The Feedback Service centralizes feedback and discussion by managing detailed lab reviews, supporting file attachments, and powering threaded conversations for both labs and articles</h4>
-</div>
+<h2>💬 Feedback Service </h2> <style>
+  h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #0D2447;
+  }
+</style>
+<img src="feedback.png" alt="Feedback Service Architecture Diagram" style="max-width: 80%; height: 80%; display: block; margin: 0 auto;">
 <div style="text-align: center;">
 <span style="font-size: 1.3em; color: #0D2447;"> Ravil Kazeev (Backend Engineer)</span>
 </div>
@@ -442,11 +461,14 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-# 📓 Marimo Service
-
-<div style="background: #EDF2F7; border-left: 5px solid #3B82F6; margin: 1em 0; padding: 1em 1.5em; border-radius: 8px;">
-<h4>Dual-architecture microservice providing real-time interactive Python notebook execution powered by Marimo library 🐍🟢</h4>
-</div>
+<h2>📓 Marimo Service </h2> <style>
+  h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #0D2447;
+  }
+</style>
+<img src="marimo.png" alt="Marimo Service Architecture Diagram" style="max-width: 80%; height: 80%; display: block; margin: 0 auto;">
 <div style="text-align: center;">
 <span style="font-size: 1.3em; color: #0D2447;"> Mikhail Trifonov (Backend Engineer)</span>
 </div>
@@ -493,11 +515,14 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-# 🤖 ML Service
-
-<div style="background: #EDF2F7; border-left: 5px solid #3B82F6; margin: 1em 0; padding: 1em 1.5em; border-radius: 8px;">
-<h4>Advanced AI-powered features providing intelligent assistance and automated grading capabilities for enhanced learning experience</h4>
-</div>
+<h2>🤖 ML Service </h2> <style>
+  h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #0D2447;
+  }
+</style>
+<img src="asssets/open-labs-share-ml.drawio.png" alt="ML Service Architecture Diagram" style="max-width: 80%; height: 80%; display: block; margin: 0 auto;">
 <div style="text-align: center;">
 <span style="font-size: 1.3em; color: #0D2447;"> Kirill Shumskiy (ML Engineer)</span>
 </div>
@@ -566,11 +591,14 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-# 🏙️ DevOps & Infrastructure
-
-<div style="background: #EDF2F7; border-left: 5px solid #3B82F6; margin: 1em 0; padding: 1em 1.5em; border-radius: 8px;">
-<h4>From manual processes to a fully automated pipeline. Robust DevOps foundation to enable rapid development, consistent testing, and reliable, zero-downtime deployments for our platform.</h4>
-</div>
+<h2>🏙️ DevOps & Infrastructure </h2> <style>
+  h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #0D2447;
+  }
+</style>
+<img src="подумаю.png" alt="DevOps Infrastructure Architecture Diagram" style="max-width: 80%; height: 80%; display: block; margin: 0 auto;">
 <div style="text-align: center;">
 <span style="font-size: 1.3em; color: #0D2447;"> Kirill Efimovich (DevOps Engineer)</span>
 </div>
