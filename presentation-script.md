@@ -244,7 +244,7 @@ Marimo Service consist of two sub-services. The Java Manager handles REST API an
 
 ## Mikhail Trifonov - Slide #40 - Marimo Service: Problems & Solutions
 
-Three main challenges were solved: high load on one service managing metadata, connections with other services, and execution simultaneously, resolved through dual-service architecture separating management from execution. Managing variables and modules across multiple code cells, solved using sessions for notebooks to track existing and erased variables and modules. Marimo widgets incompatibility with our needs and technology, addressed by creating custom design widgets based on Marimo widgets with configurable behavior fully under our control.
+The main challenge was in design. High load on one service managing metadata, connections with other services, and execution simultaneously was resolved through dual-service architecture separating management from execution.
 
 ---
 
