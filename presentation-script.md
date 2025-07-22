@@ -298,7 +298,7 @@ Our infrastructure uses a Green-Blue strategy providing zero downtime with seaml
 
 ## Kirill Efimovich - Slide #49 - DevOps: Problems & Solutions
 
-We resolved three critical problems: university network NAT blocked external access to our self-hosted server, solved by using CloudPub to create a tunnel for public access. The initial CI pipeline was complex -> resolved through teammates feedback and improvements. Risk of downtime during manual deployments, addressed by implementing a Blue-Green strategy ensuring zero-downtime updates.
+We resolved three critical problems: university network NAT blocked external access to our self-hosted server, solved by using CloudPub to create a tunnel for public access. Risk of downtime during deployment, is fixed by implementing a Blue-Green strategy.
 
 ---
 
