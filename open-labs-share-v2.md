@@ -28,7 +28,11 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 🚨 It is difficult to find practice oriented materials in one place.
 
-💎 **Our project** We created an open peer-to-peer platform where skilled ones can create their content for other learners.
+💎 **Solution:** We created an open peer-to-peer platform where skilled ones can create their content for other learners.
+
+- 💌 **Poor feedback loops** between industry needs and educational content
+
+💎 **Solution:** Provide ability to solve labs and recieve feedback from author or other skilled members.
 
 ---
 
