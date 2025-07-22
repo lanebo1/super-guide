@@ -32,7 +32,7 @@ So, what is Open Labs Share as a product? It is a content creation system, impro
 
 ## Nikita Maksimenko - Slide #6 - Technical Vision
 
-On the picture you can see architecture of the whole system. We have 10 microservices, 9 separate databases and two main protocols of communicaiton, dark blue arrows are gRPC, purple ones - REST.
+deleted slide
 
 ---
 
@@ -46,7 +46,7 @@ _Now I'll demonstrate our platform's core capabilities. First, you'll see our se
 
 ## Nikita Maksimenko - Slide #8 - Advanced System Architecture
 
-Before proceeding with each service, take a look at this monster. This is a complete architecture of our project. We use best microservice practices to make a scalable and high-performance application. 
+Before proceeding with each service, take a look at this monster. On the picture you can see architecture of the whole system. We have 10 microservices, 9 separate databases and two main protocols of communicaiton, dark blue arrows are gRPC, purple ones - HTTP REST API. We use PostgreSQL databases for metadata storage. MongoDB for large texts as comments or reviews. MinIO for all files and assets used in your system. This enshures scalable, highload and foult-tolerance architecture. Now, let's dive into each service.
 
 ---
 
@@ -109,25 +109,22 @@ The main challenge was in the create-drop ORM strategy causing inconsistency dur
 
 ## Nikita Maksimenko - Slide #21 - API Gateway (Title)
 
-The API Gateway centrally coordinates frontend REST API requests, executes business logic, and routes them to backend microservices via gRPC
+The API Gateway acs as a central coordinator in the system communicating with 6 microservices. 
 
 ---
 
 ## Nikita Maksimenko - Slide #22 - API Gateway: Primary Use Case
 
-The API Gateway handles REST requests, validates user authentication, executes platform business logic that requires multiple services communication via gRPC.
+
+API Gateway checks users authentication, validates all data before forwarding it to the backend services. Most requsts require buisness logic execution with data from several services. 
+
 
 ---
 
 ## Nikita Maksimenko - Slide #23 - API Gateway: Tech Stack & Connections
 
-We use REST for external API for it's simplicity. gRPC enhances speed of content delivery between microservices. Jakarta Validation and Lombok libraries reduce boilerplate code and enhances service security. Core tech is Java 21 and Spring Framework.
+We use the same java tech stack.
 
----
-
-## Nikita Maksimenko - Slide #24 - API Gateway: Problems & Solutions
-
-About problems. We had to fix communication problems in team by introducing strict rules. To ensure fault tolerance of backend system we must have implemented checks by ourselfs.
 
 ---
 
