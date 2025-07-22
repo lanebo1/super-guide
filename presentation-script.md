@@ -26,7 +26,7 @@ We identified key challenges in education technology: limited real-world project
 
 ## Kirill Efimovich - Slide #4 - Meet the Team
 
-About us: I've handled project leadership and DevOps engineering, Mikhail managing authentication systems, Nikita designed and implemented API systems, Timur made content systems, Ravil worked on feedback systems, Kirill developed ML and tackeld backend, and Aleliya design.
+About us: I've handled project leadership and DevOps engineering, Mikhail managing authentication systems, Nikita designed and implemented API systems, Timur made content systems, Ravil worked on feedback systems, Kirill developed ML and tackeld backend, and Aleliya designed and implemented frontend.
 
 ---
 
@@ -280,7 +280,7 @@ Our DevOps infrastructure built as fully automated pipeline. We engineered a rob
 
 ## Kirill Efimovich - Slide #46 - DevOps: Primary Use Case
 
-Our automated deployment pipeline and infrastructure management accelerates delivery by fully automating the build, test, and deployment lifecycle. We ensure stability by creating reproducible environments with Docker for development and production. We also provide team help tools to automate issues managing and PR notifiers to keep the team in sync.
+With our automated deployment we ensure stability by creating reproducible environments with Docker for development and production. We also provide team help tools to automate issues managing and PR notifiers to keep the team in sync.
 
 ---
 
@@ -292,7 +292,7 @@ GitHub Actions workflows include services compilation validation, test execution
 
 ## Kirill Efimovich - Slide #48 - DevOps: Infrastructure
 
-Our infrastructure uses a Green-Blue strategy providing zero downtime with seamless updates. The workflow deploys new versions Green alongside Blue, tests Green environment internally, switches proxy to route traffic to Green, and keeps Blue for instant rollback. Our hardware setup includes a self-managed server on Ubuntu with decent stats. We use NGINX and HAProxy for proxying and CloudPub for public NAT traversal.
+Our infrastructure uses a Green-Blue strategy providing zero downtime with seamless updates. Green deploys at server, tests it, and if it healthy then haproxy switches traffic to new version. Blue is kept for instant rollback.
 
 ---
 
@@ -310,16 +310,16 @@ And, wrapping it up, we're now ready to answer any questions you may have about 
 
 ## Q&A Response Assignments
 
-**Technical Architecture Questions:** Nikita Maksimenko, Mikhail Trifonov, Kirill Efimovich
-**Security & Authentication:** Mikhail Trifonov
-**Frontend & UX:** Aleliya Turushkina
-**Content Management & Storage:** Timur Salakhov
-**AI/ML Implementation:** Kirill Shumskiy
-**Feedback & Review Systems:** Ravil Kazeev
-**DevOps & Infrastructure:** Kirill Efimovich
+**Technical Architecture Questions:** Nikita Maksimenko, Mikhail Trifonov, Kirill Efimovich \
+**Security & Authentication:** Mikhail Trifonov \
+**Frontend & UX:** Aleliya Turushkina \
+**Content Management & Storage:** Timur Salakhov \
+**AI/ML Implementation:** Kirill Shumskiy \
+**Feedback & Review Systems:** Ravil Kazeev \
+**DevOps & Infrastructure:** Kirill Efimovich \
 **Project Management & Vision:** Kirill Efimovich
 
 ---
 
-**Total Presentation Time: ~20-25 minutes**
+**Total Presentation Time: ~20-25 minutes** \
 **Q&A Time: ~10-15 minutes**
