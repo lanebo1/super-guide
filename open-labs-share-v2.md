@@ -20,35 +20,18 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 </div>
 </div>
 
-
----
-
-## 📋 Agenda
-
-- **Problem Statement & Technical Vision** 👓
-- **Team intro** 👨‍💻
-- **Demo** 🎥
-- **Frontend Engineering & UX** 🔚
-- **Advanced System Architecture** ⛩️
-- **Backend Microservices Deep Dive** 🤿
-- **ML integration** ֎
-- **DevOps & Cloud Infrastructure** ☁︎
-- **Discussion** ⚔️
-
 ---
 
 <!-- _class: compact-list -->
 
-## 🚨 The Problem: Skills Gap in Tech Education
+## 🚨 The Problem and our Project
 
 **Engineering challenges in education technology:**
 
-- 🍾 **Scalability bottlenecks** in traditional learning management systems
 - 🚧 **Limited real-world project experience** due to academic focus on theory
-- 💼 **Inefficient mentor-learner matching** without automated skill assessment
 - 💌 **Poor feedback loops** between industry needs and educational content
 
-💎 **Our engineering mission:** Build a distributed, scalable platform that efficiently connects industry experts with aspiring developers and young professionals through hands-on technical projects and education.
+💎 **Our project** is a content creation platform that efficiently connects mentors with young developers throu interactive learning and structured feedback.
 
 ---
 
@@ -57,34 +40,12 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 ## 🔰 Meet the team
 
 - 🌁 **Kirill Efimovich (PM/DevOps)** - *Project Leadership & DevOps Engineer*
-- 🔒 **Mikhail Trifonov** - *Backend Engineer & Authentication Systems*
-- 🏗️ **Nikita Maksimenko** - *Backend Engineer & API System*
-- 📚 **Timur Salakhov** - *Backend Engineer & Content Systems* 
-- 💌 **Ravil Kazeev** - *Backend Engineer & Feedback Systems*
+- 🔒 **Mikhail Trifonov** - *Backend Engineer*
+- 🏗️ **Nikita Maksimenko** - *Backend Engineer*
+- 📚 **Timur Salakhov** - *Backend Engineer* 
+- 💌 **Ravil Kazeev** - *Backend Engineer*
 - 🤖 **Kirill Shumskiy** - *ML & Backend Engineer*
 - 🎨 **Aleliya Turushkina** - *Designer & Frontend Engineer*
-
----
-
-## 🚚 Product Vision 
-
-**Open Labs Share** - A modern learning platform that bridges the gap between academia and industry through hands-on technical collaboration.
-
-**We revolutionize education by:**
-- 📝 **Streamlined Content Creation:** Lab and Article systems enabling experts to publish and maintain high-quality learning materials
-- 🎯 **Guided Learning Experience:** Structured submission and review process that provides meaningful feedback
-- 🧠 **Smart Community Building:** AI-enhanced assistance for better feedback and user experience
-- 🐍 **Marimo elements:** Interactive Python notebook execution with widgets for deep understanding of the material
-
----
-
-## 👾 Technical Vision
-
-**Open Labs Share** - A microservices-driven learning ecosystem with AI-powered assistance.
-
-- 🏗️ **Microservices:** Separate services for labs, articles, feedback etc.
-- 🚀 **gRPC:** Fast and reliable inter-service communication
-- 🧠 **ML Services:** ML powered feedback and chat
 
 ---
 
@@ -105,35 +66,6 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-<img src="image.png" alt="Frontend Architecture Diagram" style="max-width: 90%; height: auto; display: block; margin: 0 auto;">
-
----
-
-<h2> 🌻 Frontend </h2> <style>
-  h2 {
-    text-align: center;
-    font-size: 2em;
-    color: #0D2447;
-  }
-</style>
-<img src="frontend.png" alt="Frontend Architecture Diagram" style="max-width: 80%; height: 80%; display: block; margin: 0 auto; margin-top: 20px;">
-<div style="text-align: center;">
-<span style="font-size: 1.3em; color: #0D2447;"> Aleliya Turushkina (Frontend Engineer)</span>
-</div>
-
----
-
-## :mushroom: Frontend: Main user interface for the Open Labs Share
-
-- :file_folder: Handles user authentication, profile management, and navigation
-- :book: Enables users to:
-  - Browse, upload, and review labs and articles
-  - Participate in peer review and feedback
-  - Interact with real-time features (e.g., chat, notifications)
-
-
----
-
 ## :tulip: Frontend: Tech Stack & Connections
 
 - :sunny: **Frontend:** React, Vite, Tailwind CSS, React Router
@@ -145,14 +77,11 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-## :blossom: Frontend: Problems & Solutions
+<img src="image.png" alt="Frontend Architecture Diagram" style="max-width: 90%; height: auto; display: block; margin: 0 auto;">
 
-| ❌ **Problems**                                         | ✅ **Solutions**                                                                                   |
-|--------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| ❌ Lack of viewing of the user's submission and feedback | ✅ Downloading files directly from MinIO                                                          |
-| ❌ Inability to view Markdown using a dark theme        | ✅ Implemented theme switching and style across the entire platform                               |
 
 ---
+
 
 <h2>🔐 Authentication Service </h2> <style>
   h2 {
@@ -163,7 +92,6 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 </style>
 <img src="auth.png" alt="Frontend Architecture Diagram" style="max-width: 80%; height: 80%; display: block; margin: 0 auto;">
 <div style="text-align: center;">
-<span style="font-size: 1.3em; color: #0D2447;"> Mikhail Trifonov (Backend Engineer)</span>
 </div>
 
 ---
@@ -197,16 +125,6 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-## Authentication Service: Problems & Solutions
-
-| ❌ **Problems**                                         | ✅ **Solutions**                                                                                   |
-|--------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| ❌ Same JWT is still available after user logout      | ✅ Token `blacklisting` and invalidating on logout 📝                                              |
-| ❌ User data consistency between Auth and Users Services | ✅ Single `source of truth` in Users Service, Auth Service fetches on-demand and do not store any users data 👮 🤝 🙍‍♂️ |
-| ❌ Username changes makes current JWT invalid            | ✅ Token `reissue` logic if that preserves user sessions seamlessly 🛂                            |
-
----
-
 <h2>👥 Users Service </h2> <style>
   h2 {
     text-align: center;
@@ -216,7 +134,6 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 </style>
 <img src="users.png" alt="Users Service Architecture Diagram" style="max-width: 80%; height: 80%; display: block; margin: 0 auto;">
 <div style="text-align: center;">
-<span style="font-size: 1.3em; color: #0D2447;"> Mikhail Trifonov (Backend Engineer)</span>
 </div>
 
 ---
@@ -248,16 +165,6 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-## Users Service: Problems & Solutions
-
-| ❌ **Problems**                                         | ✅ **Solutions**                                                                                   |
-|--------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| ❌ Create-drop strategy in ORM caused inconsistency when all containers restarted | ✅ Flyway for SQL tables creation instead of auto-creation by ORM. Validate strategy 🦜🦅🐦‍⬛🐦 |
-| ❌ Points system requiring strict control on changes due to its _"money"_ purpose | ✅ Transactional methods to prevent inconsistency in balance and counters 🤑                         |
-
-
----
-
 <h2>📥 API Gateway 📤 </h2> <style>
   h2 {
     text-align: center;
@@ -267,7 +174,6 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 </style>
 <img src="api.png" alt="API Gateway Architecture Diagram" style="max-width: 80%; height: 80%; display: block; margin: 0 auto;">
 <div style="text-align: center;">
-<span style="font-size: 1.3em; color: #0D2447;"> Nikita Maksimenko (Backend Engineer)</span>
 </div>
 
 ---
@@ -288,6 +194,8 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 **Java Spring Boot with REST-to-gRPC translation** ☕🔄
 
+- 🧑‍💻 **Java 21 + Spring Framework:** 
+    ⤷ REST API, gRPC, Jackson Validators, Spring AOP
 - 📥 **REST API:**
     ⤷ REST is the simplest and most widely supported method for web communication
 - 🛡️ **Security Layer:**
@@ -296,18 +204,6 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
     ⤷ gRPC provides high-speed, type-safe, and scalable service-to-service communication
 - 📤 **Response Handling:** 
     ⤷ Centralizes response handling and error management over the whole backend
-- 🧑‍💻 **Java 21 + Spring Framework:** 
-    ⤷ REST API, gRPC, Jackson Validators, Spring AOP
-
----
-
-## API Gateway: Problems & Solutions
-
-| ❌ **Problems**                                  | ✅ **Solutions**                                                                            |
-|--------------------------------------------------|---------------------------------------------------------------------------------------------|
-| ❌ Too many services and people to communicate with | ✅ Create clear rules of communication and define issue execution order for efficient collaboration |
-| ❌ Unclear models from both frontend and backend    | ✅ Establish detailed requirements for each request step to ensure consistency and clarity   |
-| ❌ Lack of data checks on frontend                | ✅ Use Jackson validators in request models to enforce data integrity before processing        |
 
 ---
 
@@ -320,7 +216,6 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 </style>
 <img src="articles.png" alt="Articles Service Architecture Diagram" style="max-width: 80%; height: 80%; display: block; margin: 0 auto;">
 <div style="text-align: center;">
-<span style="font-size: 1.3em; color: #0D2447;"> Timur Salakhov (Backend Engineer)</span>
 </div>
 
 ---
@@ -350,17 +245,6 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-## Articles Service: Problems & Solutions
-
-| ❌ **Problems**                                         | ✅ **Solutions**                                                                                   |
-|--------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| ❌ Difficult interaction with database via SQL queries | ✅ Use `SQLAlchemy` ORM system for convenient and flexible database interaction  |
-| ❌ Need to organize article files systematically | ✅ Created structured MinIO bucket organization: `articles/article_id/article.pdf`                  |
-| ❌ Large files causing timeout issues during upload | ✅ Implemented streaming gRPC uploads for efficient file transfer   |
-| ❌ Frontend does searching across articles      | ✅ Moved searching on service and built text search functionality on articles with pagination |
-
----
-
 <h2>📚 Labs Service </h2> <style>
   h2 {
     text-align: center;
@@ -370,7 +254,6 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 </style>
 <img src="labs.png" alt="Labs Service Architecture Diagram" style="max-width: 80%; height: 80%; display: block; margin: 0 auto;">
 <div style="text-align: center;">
-<span style="font-size: 1.3em; color: #0D2447;"> Timur Salakhov (Backend Engineer)</span>
 </div>
 
 ---
@@ -384,8 +267,8 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 - 🏷️ **Tag System:** Organizes labs with flexible tagging and search capabilities
 - 📊 **Grading System:** Tracks submission status and grade workflow
 
----
 
+---
 ## Labs Service: Tech Stack & Connections
 
 **Python with hybrid database architecture and MinIO storage** 🐍
@@ -401,17 +284,6 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-## Labs Service: Problems & Solutions
-
-| ❌ **Problems**                                         | ✅ **Solutions**                                                                                   |
-|--------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| ❌ Large submission text content causing database bloat | ✅ Implemented hybrid storage: metadata in PostgreSQL, text content in MongoDB for flexibility |
-| ❌ Complex data relationships between labs, submissions, and tags | ✅ Used `SQLAlchemy` models with proper foreign keys and many-to-many relationships for structured data management |
-| ❌ Need to organize files systematically | ✅ Created structured MinIO bucket organization: `labs/lab_id/` and `submissions/submission_id/` |
-
-
----
-
 <h2>💬 Feedback Service </h2> <style>
   h2 {
     text-align: center;
@@ -421,7 +293,6 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 </style>
 <img src="feedback.png" alt="Feedback Service Architecture Diagram" style="max-width: 80%; height: 80%; display: block; margin: 0 auto;">
 <div style="text-align: center;">
-<span style="font-size: 1.3em; color: #0D2447;"> Ravil Kazeev (Backend Engineer)</span>
 </div>
 
 ---
@@ -451,16 +322,6 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-## Feedback Service: Problems & Solutions
-
-| ❌ **Problems**                                         | ✅ **Solutions**                                                                                   |
-|--------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| ❌ A single database was inefficient for managing varied data types (metadata, text, and files). | ✅ Implemented a **multi-storage architecture**, using the best database for each job: PostgreSQL for metadata, MongoDB for comments, and MinIO for file attachments. |
-| ❌ Uploading large files as a single request was unreliable, leading to timeouts and memory errors. | ✅ Re-architected attachment handling using **gRPC streaming**, which processes files in small chunks for efficient and robust transfers. |
-| ❌ File downloads through the Feedback service would create a bottleneck | ✅ Configured the MinIO bucket for **public read access**, allowing the service to provide direct file URLs to the frontend and offload all download traffic. |
-
----
-
 <h2>📓 Marimo Service </h2> <style>
   h2 {
     text-align: center;
@@ -470,7 +331,6 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 </style>
 <img src="marimo.png" alt="Marimo Service Architecture Diagram" style="max-width: 80%; height: 80%; display: block; margin: 0 auto;">
 <div style="text-align: center;">
-<span style="font-size: 1.3em; color: #0D2447;"> Mikhail Trifonov (Backend Engineer)</span>
 </div>
 
 ---
@@ -505,15 +365,6 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-## Marimo Service: Problems & Solutions
-
-| ❌ **Problems**                                         | ✅ **Solutions**                                                                                   |
-|--------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| ❌ High load on one service to manage metadata, connections with other services, and execution at the same time | ✅ Dual-service architecture for management from execution 2️⃣✌️                                |
-| ❌ Managing variables and modules across multiple code cells | ✅ Sessions for notebooks to track existing and erased variables/modules 🧹                       |
-| ❌ Marimo widgets incompatibility with our needs and tech | ✅ Custom design widgets (but based on Marimo widgets) with configurable behaviour fully under our control 🧩🕹️ |
-
----
 
 <h2>🤖 ML Service </h2> <style>
   h2 {
@@ -522,9 +373,8 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
     color: #0D2447;
   }
 </style>
-<img src="asssets/open-labs-share-ml.drawio.png" alt="ML Service Architecture Diagram" style="max-width: 80%; height: 80%; display: block; margin: 0 auto;">
+<img src="asssets\asssets\open-labs-share-ml.drawio.png" alt="ML Service Architecture Diagram" style="max-width: 80%; height: 80%; display: block; margin: 0 auto;">
 <div style="text-align: center;">
-<span style="font-size: 1.3em; color: #0D2447;"> Kirill Shumskiy (ML Engineer)</span>
 </div>
 
 ---
@@ -568,26 +418,6 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 🥬 **Celery** for asynchronous tasks
 🛢️ **Redis** for caching and message broker
 
----
-
-## ML Service: Infrastructure
-
-
-![alt text](asssets/open-labs-share-ml.drawio.png)
-
-**Technical Details:**
-<div style="display: flex; gap: 2em;">
-<div style="flex: 1;">
-<h3>🧠 ML + RAG Pipeline</h3>
-<ul>
-  <li>Recursive chunking for long docs</li>
-  <li>Embedding via transformer model (BGE)</li>
-  <li>Vector DB (Qdrant)</li>
-  <li>Relevance thresholding (cosine similarity)</li>
-  <li>RAG with prompt templating for generation</li>
-</ul>
-</div>
-</div>
 
 ---
 
@@ -600,7 +430,6 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 </style>
 <img src="подумаю.png" alt="DevOps Infrastructure Architecture Diagram" style="max-width: 80%; height: 80%; display: block; margin: 0 auto;">
 <div style="text-align: center;">
-<span style="font-size: 1.3em; color: #0D2447;"> Kirill Efimovich (DevOps Engineer)</span>
 </div>
 
 ---
@@ -656,13 +485,21 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-## 🏚️ DevOps: Problems & Solutions
+## Communication Problems
 
-| ❌ **Problems**                                         | ✅ **Solutions**                                                                                   |
-|--------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| ❌ University network NAT blocked external access to our self-hosted server. | ✅ After issues with Cloudflare, we successfully used **CloudPub** to create a secure tunnel for public access. |
-| ❌ The initial CI/CD pipeline was complex and required many iterations to stabilize. | ✅ Through persistent, collaborative effort, we developed a set of reliable, modular GitHub Actions workflows. |
-| ❌ Risk of downtime during manual deployments. | ✅ We fully automated the deployment process and are implementing a **Blue-Green strategy** to ensure zero-downtime updates. |
+| ❌ **Problems** | ✅ **Solutions** |
+|---|---|
+| ❌ Problems in task setting and communication between people | ✅ Create clear GitHub rules for issue creation, assignment workflows, and collaborative development processes |
+| ❌ Too many services that use the same data model | ✅ Create scripts that automatically check data model consistency across all services |
+
+---
+
+## Implementation Problems
+
+| ❌ **Problems** | ✅ **Solutions** |
+|---|---|
+| ❌ A single database was inefficient for managing varied data types. | ✅ Used the best database for each job: PostgreSQL for metadata, MongoDB for comments, and MinIO for file attachments. |
+| ❌ University network NAT blocked access to self-hosted server. | ✅ After issues with Cloudflare, we successfully used **CloudPub** to create a secure tunnel for public access. |
 
 ---
 

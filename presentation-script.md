@@ -12,12 +12,6 @@ Good morning, everyone. I'm Kirill, the project manager and DevOps engineer for 
 
 ---
 
-## Kirill Efimovich - Slide #2 - Agenda
-
-About agenda. We'll start with the problem and our solve, introduce our team, and show demo. Then we'll dive into tech stuff, and then wrap it up for discussion.
-
----
-
 ## Nikita Maksimenko - Slide #3 - The Problem: Skills Gap in Tech Education
 
 We found that typical learning lacks practice required by all jobs. Our mission is to use our engineering skills to create a platform where theory meets practice.
