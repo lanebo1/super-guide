@@ -52,7 +52,7 @@ _Now I'll demonstrate our platform's core capabilities. First, you'll see our se
 
 ## Aleliya Turushkina - Slide #8 - Frontend Architecture (Title)
 
-The frontend is a modern web app offering an intuitive, interactive experience with labs and articles. It serves as the main gateway, ensuring smooth navigation and interaction with core features.
+The frontend is a modern web app offering an intuitive, interactive experience with labs and articles.
 
 ---
 
@@ -64,13 +64,13 @@ The frontend handles critical functionalities such as user authentication, profi
 
 ## Aleliya Turushkina - Slide #10 - Frontend: Tech Stack & Connections
 
-Technically, the frontend uses React with Vite for fast builds, Tailwind CSS for responsive styling, and React Router for SPA navigation. For backend communication, the frontend integrates with REST APIs via an API Gateway, plus real-time file download support from MinIO.
+Technically, the frontend uses React with Vite for fast build. We use specialized libraries like Markdown and KaTeX for content rendering.
 
 ---
 
 ## Aleliya Turushkina - Slide #11 - Frontend: Problems & Solutions
 
-We have the problem of the inability to view Markdown content using a dark theme, which we solved by implementing comprehensive theme switching and styling across the entire platform.
+We had the problem of the inability to view Markdown content using a dark theme, which we solved by global theme switching and styling across the entire platform.
 
 ---
 
