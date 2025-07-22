@@ -76,7 +76,7 @@ We have the problem of the inability to view Markdown content using a dark theme
 
 ## Nikita Maksimenko - Slide #12 - Advanced System Architecture
 
-_Before diving into individual services, let me explain our overall system architecture. We've designed an architecture for high availability and horizontal scaling. Our microservices communicate via gRPC for high-performance, type-safe interactions, while the frontend communicates through REST APIs via our centralized API Gateway. This architecture enables us to scale individual components independently, maintain strong service boundaries, and ensure reliable communication between polyglot services written in Java, Go, and Python._
+Before proceeding with each service, take a look at this monster. This is a complete architecture of our project. We use best microservice practices to make a scalable and high-performance application. 
 
 ---
 
@@ -130,25 +130,25 @@ _Two main challenges were resolved: first, the create-drop ORM strategy causing 
 
 ## Nikita Maksimenko - Slide #21 - API Gateway (Title)
 
-_The API Gateway serves as the centralized entry point coordinating frontend REST API requests, executing business logic, and routing them to backend microservices via gRPC. The API Gateway is the conductor of our microservices orchestra, ensuring all services work in harmony while providing a clean, unified interface to the frontend._
+The API Gateway centrally coordinates frontend REST API requests, executes business logic, and routes them to backend microservices via gRPC
 
 ---
 
 ## Nikita Maksimenko - Slide #22 - API Gateway: Primary Use Case
 
-_It provides centralized entry point serving as the unified access layer for all client REST API requests. The gateway handles request routing directing incoming requests to appropriate microservices including auth, user, article, and lab services via gRPC. It manages authentication and security validating JWT tokens and user permissions. The service handles cross-cutting concerns like logging, request tracing, and error handling for all API traffic, plus business logic execution aggregating data and enforcing business rules beyond simple routing._
+The API Gateway handles REST requests, validates user authentication, executes platform business logic that requires multiple services communication via gRPC. 
 
 ---
 
 ## Nikita Maksimenko - Slide #23 - API Gateway: Tech Stack & Connections
 
-_Our tech stack uses Java Spring Boot with REST-to-gRPC translation. We receive data from frontend via REST as the simplest and most widely supported web communication method. Our security layer intercepts incoming REST requests for authentication and authorization ensuring secure access and centralized permission checks. The gRPC client routes requests internally to backend microservices providing high-speed, type-safe, and scalable service-to-service communication. Response handling returns responses to clients through the gateway centralizing response handling and error management._
+We use REST for external API for it's simplicity. gRPC enhances speed of content delivery between microservices. Jakarta Validation and Lombok libraries reduce boilerplate code and enhances service security. Core tech is Java 21 and Spring Framework.
 
 ---
 
 ## Nikita Maksimenko - Slide #24 - API Gateway: Problems & Solutions
 
-_We addressed three problems: too many services and people to communicate with, solved by creating clear communication rules and defining issue execution order for efficient collaboration. Unclear models from both frontend and backend, resolved by establishing detailed requirements for each request step ensuring consistency and clarity. Lack of data checks on frontend, addressed using Jackson validators in request models to enforce data integrity before processing._
+About problems. We had to fix communication problems in team by introducing strict rules. To ensure fault tolerance of backend system we must have implemented checks by ourselfs.
 
 ---
 
