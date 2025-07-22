@@ -299,10 +299,6 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ## Marimo Service: Primary Use Case
 
-**Interactive code execution and data visualization through cells with Python code** 🔬
-
-- 📝 **Notebook Management:** CRUD operations for marimo components linked to labs/articles 🔗
-- ⏰ **Session Orchestration:** Start/stop interactive Python sessions with TTL 🪦
 - 👟 **Code Execution:** Real-time cell execution with output capture and error handling 🖐️
 - 📊 **Asset Management:** Upload/download datasets and files for notebook use 🐪
 - 🎛️ **Interactive Widgets:** Set of basic Marimo input widgets which value can be used in code (sliders, switchers, text fields, etc.) 📟
@@ -311,8 +307,6 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 ---
 
 ## Marimo Service: Tech Stack & Connections
-
-**Java for metadata management with Python native code execution** ☕🐍
 
 - 🔧 **Java Manager + Python Executor:** 
 &nbsp;&nbsp;&nbsp;⤷ Java handles `REST API` and `metadata` while Python `executes` notebooks
