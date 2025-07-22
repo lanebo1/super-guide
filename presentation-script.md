@@ -56,27 +56,12 @@ Before proceeding with each service, take a look at this monster. This is a comp
 
 ---
 
-## Aleliya Turushkina - Slide #9 - Frontend Architecture (Title)
-
-The frontend is a modern web app offering an intuitive, interactive experience with labs and articles.
-
----
-
-## Aleliya Turushkina - Slide #10 - Frontend: Main User Interface
-
-The frontend handles critical functionalities such as user authentication, profile management, and dynamic navigation. It allows users to browse, upload, and review labs and articles, participate in peer review processes, and communicate with real-time features like comments.
 
 ---
 
 ## Aleliya Turushkina - Slide #11 - Frontend: Tech Stack & Connections
 
 Technically, the frontend uses React with Vite for fast build. We use specialized libraries like Markdown and KaTeX for content rendering.
-
----
-
-## Aleliya Turushkina - Slide #12 - Frontend: Problems & Solutions
-
-We had the problem of the inability to view Markdown content using a dark theme, which we solved by global theme switching and styling across the entire platform.
 
 ---
 
@@ -136,7 +121,7 @@ The API Gateway centrally coordinates frontend REST API requests, executes busin
 
 ## Nikita Maksimenko - Slide #22 - API Gateway: Primary Use Case
 
-The API Gateway handles REST requests, validates user authentication, executes platform business logic that requires multiple services communication via gRPC. 
+The API Gateway handles REST requests, validates user authentication, executes platform business logic that requires multiple services communication via gRPC.
 
 ---
 
@@ -202,7 +187,7 @@ Stack is pretty much the same as Articles Service: Python and gRPC as well. Howe
 
 ## Ravil Kazeev - Slide #33 - Feedback Service (Title)
 
-The Feedback service handles reviews on lab solutions and provide comment section for both labs and articles to discuss the content by users 
+The Feedback service handles reviews on lab solutions and provide comment section for both labs and articles to discuss the content by users
 
 ---
 
