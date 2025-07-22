@@ -326,20 +326,6 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-
-<h2>🤖 ML Service </h2> <style>
-  h2 {
-    text-align: center;
-    font-size: 2em;
-    color: #0D2447;
-  }
-</style>
-<img src="asssets\asssets\open-labs-share-ml.drawio.png" alt="ML Service Architecture Diagram" style="max-width: 80%; height: 80%; display: block; margin: 0 auto;">
-<div style="text-align: center;">
-</div>
-
----
-
 ## ML Service: Primary Use Case
 
 **Two powerful AI enhancements for the learning platform** 🧠
@@ -379,6 +365,19 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 🥬 **Celery** for asynchronous tasks
 🛢️ **Redis** for caching and message broker
 
+---
+
+
+<h2>🤖 ML Service Architecture</h2> <style>
+  h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #0D2447;
+  }
+</style>
+<img src="asssets\asssets\open-labs-share-ml.drawio.png" alt="ML Service Architecture Diagram" style="max-width: 80%; height: 80%; display: block; margin: 0 auto;">
+<div style="text-align: center;">
+</div>
 
 ---
 
@@ -397,21 +396,12 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ## 🏛️ DevOps: Primary Use Case
 
-**Automated deployment pipeline and infrastructure management** 🌆
-
-- 🤖 **Accelerate Delivery:** Fully automate the build, test, and deployment lifecycle
-- 📦 **Ensure Stability:** Create reproducible environments with Docker for development and production
-- 🧰 **Team help tools** to automate issues managing and PR notifiers to keep the team perfectly synchronized
-
----
-
-## 🛣️ DevOps: Tech Stack & Connections
-
 **Key GitHub Actions Workflows:** 💫
 - 🔧 **Compilation Validation:** Ensures all services compile
 - 🏏 **Test Execution:** Runs unit & integration tests
 - 🐳 **Docker Build Validation:** Buillds, validates and pushes images to GHCR
 - ✈️ **Deployment Automation:** Handles the Blue-Green deployment logic
+- 🔗 **Team help tools:** to automate issues managing and PR notifiers to keep the team perfectly synchronized
 
 ---
 
