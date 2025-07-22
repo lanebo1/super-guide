@@ -82,7 +82,7 @@ Before proceeding with each service, take a look at this monster. This is a comp
 
 ## Mikhail Trifonov - Slide #13 - Authentication Service (Title)
 
-I'll start with our Authentication Service, which is the foundation of our security architecture, ensuring every user interaction is protected.
+Let's start with our Authentication Service, which is the foundation of our security architecture, ensuring every user interaction is protected.
 
 ---
 
