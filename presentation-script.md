@@ -82,49 +82,49 @@ Before proceeding with each service, take a look at this monster. This is a comp
 
 ## Mikhail Trifonov - Slide #13 - Authentication Service (Title)
 
-_I'll start with our Authentication Service, which provides stateless JWT-based authentication for enterprise-grade security across the entire Open Labs Share ecosystem. This service is the foundation of our security architecture, ensuring every user interaction is protected while maintaining seamless user experience._
+I'll start with our Authentication Service, which is the foundation of our security architecture, ensuring every user interaction is protected.
 
 ---
 
 ## Mikhail Trifonov - Slide #14 - Authentication Service: Primary Use Case
 
-_This service handles all authentication flows and token lifecycle management for secure access control. It manages user authentication through sign-in and sign-up with gRPC calls to the Users Service. The service generates JWT access and refresh tokens with user claims, verifies signatures, expiration, and blacklist status. It provides session management with logout and token blacklisting for security, and serves as a security gateway validating all API requests for protected resources._
+This service manages user authentication through sign-in and sign-up with gRPC calls to the Users Service, generating JWT access and refresh tokens to control user sessions. It also serves as a security gateway validating all API requests for protected resources.
 
 ---
 
 ## Mikhail Trifonov - Slide #15 - Authentication Service: Tech Stack & Connections
 
-_Our tech stack uses Java 21 with Spring Boot 3.5 for REST controllers, Spring Security with JWT for token generation, signing, validation, and refresh token support. We use gRPC for high-performance calls to the Users Service and token validation for the API Gateway. An in-memory blacklist stores invalidated tokens for logout functionality, and we provide OpenAPI documentation for interactive API testing._
+Auth Service uses Java with Spring Boot for REST API, Spring Security with JWT for token management. We use gRPC for high-performance calls to the Users Service and token validation for the API Gateway.
 
 ---
 
 ## Mikhail Trifonov - Slide #16 - Authentication Service: Problems & Solutions
 
-_We solved three critical problems: first, JWT tokens remaining valid after user logout, which we addressed through token blacklisting and invalidation. Second, user data consistency between Auth and Users Services, solved by establishing a single source of truth in the Users Service while the Auth Service fetches data on-demand without storing user information. Third, username changes invalidating current JWTs, resolved through token reissue logic that preserves user sessions seamlessly._
+We solved three critical problems: first, access tokens remaining valid after user logout, which we addressed through token blacklisting and invalidation. Second, user data consistency between Auth and Users Services, solved by transferring the storage of all user data to the Users Service. Third, username changes invalidating current access tokens, resolved through token reissue logic that preserves user sessions seamlessly.
 
 ---
 
 ## Mikhail Trifonov - Slide #17 - Users Service (Title)
 
-_The Users Service serves as the single source of truth for all user data with comprehensive profile management and a points system. Every great platform needs a reliable foundation for user data, and I designed this service to be the single source of truth that all other services can trust._
+The Users Service serves as the single source of truth for all user data and a points system management.
 
 ---
 
 ## Mikhail Trifonov - Slide #18 - Users Service: Primary Use Case
 
-_It manages all user data, credentials, and points for solving and reviewing labs. The service handles user registration creating new accounts, credential management storing bcrypt-hashed passwords and validating usernames, emails, and passwords. It provides CRUD operations for user profiles, tracks labs solved and reviewed counts with points balance, and maintains data integrity as the single source of truth for all user-related information._
+It provides CRUD operations for user profiles, tracks labs solved and reviewed counts with points balance, and maintains data integrity as the single source of truth for all user-related information.
 
 ---
 
 ## Mikhail Trifonov - Slide #19 - Users Service: Tech Stack & Connections
 
-_We use Java 21 with Spring Boot 3.5 for REST controllers and JPA repositories. PostgreSQL stores user data, credentials, points, and lab statistics. Flyway handles database schema versioning and migration management. Our gRPC server provides APIs for user validation, data retrieval, and points updates to other microservices._
+We use same framework as for Auth Service. PostgreSQL stores user data and points. Flyway handles database migration management and gRPC server provides API for data retrieval and updates.
 
 ---
 
 ## Mikhail Trifonov - Slide #20 - Users Service: Problems & Solutions
 
-_Two main challenges were resolved: first, the create-drop ORM strategy causing inconsistency during container restarts, solved by implementing Flyway for SQL table creation instead of auto-creation with a validate strategy. Second, strict control requirements for the points system due to its monetary purpose, addressed through transactional methods preventing inconsistency in balance and counters._
+Two main challenges were resolved: first, the create-drop ORM strategy causing inconsistency during container restarts, solved by using Flyway. Second, strict control for the points system was needed, addressed through transactional methods preventing any counters inconsistency.
 
 ---
 
@@ -226,25 +226,25 @@ A major challenge was that downloading files through the service created a bottl
 
 ## Mikhail Trifonov - Slide #37 - Marimo Service (Title)
 
-_The Marimo Service is a dual-architecture microservice providing real-time interactive Python notebook execution powered by the Marimo library. Interactive coding should be accessible to everyone, and I built this service to bring the power of Jupyter-like notebooks directly into our platform with seamless execution._
+The Marimo Service provides interactive Python notebook execution with the Marimo library widgets.
 
 ---
 
 ## Mikhail Trifonov - Slide #38 - Marimo Service: Primary Use Case
 
-_This service enables interactive code execution and data visualization through cells with Python code. It provides notebook management with CRUD operations for marimo components linked to labs and articles. Session orchestration starts and stops interactive Python sessions with TTL. Code execution happens in real-time with output capture and error handling. Asset management handles upload and download of datasets and files for notebook use. Interactive widgets provide basic Marimo input widgets whose values can be used in code, and cross-cell state memory ensures variables and modules from executed cells are available in other cells._
+This service enables interactive code execution and data visualization through cells with Python code linked to labs and articles and cross-cells session storage. Datasets and files can be uploaded for notebook use, and Interactive widgets provide basic Marimo input widgets whose values can be used in code.
 
 ---
 
 ## Mikhail Trifonov - Slide #39 - Marimo Service: Tech Stack & Connections
 
-_Our tech stack uses Java for metadata management with Python native code execution. The Java Manager handles REST API and metadata while Python executes notebooks. PostgreSQL tracks notebook metadata, user sessions, and execution trails with TTL cleanup. MinIO provides object storage for notebook files and user-uploaded assets. gRPC enables communication between Java Manager and Python Executor for execute requests and session management, with Marimo providing interactive notebook execution with custom widgets._
+Marimo Service consist of two sub-services. The Java Manager handles REST API and metadata while Python executes notebooks. PostgreSQL tracks notebook metadata and user sessions. MinIO provides object storage for notebook files and user-uploaded assets. gRPC is used for Java Manager and Python Executor communications.
 
 ---
 
 ## Mikhail Trifonov - Slide #40 - Marimo Service: Problems & Solutions
 
-_We solved three challenges: high load on one service managing metadata, connections with other services, and execution simultaneously, resolved through dual-service architecture separating management from execution. Managing variables and modules across multiple code cells, solved using sessions for notebooks to track existing and erased variables and modules. Marimo widgets incompatibility with our needs and technology, addressed by creating custom design widgets based on Marimo widgets with configurable behavior fully under our control._
+Three main challenges were solved: high load on one service managing metadata, connections with other services, and execution simultaneously, resolved through dual-service architecture separating management from execution. Managing variables and modules across multiple code cells, solved using sessions for notebooks to track existing and erased variables and modules. Marimo widgets incompatibility with our needs and technology, addressed by creating custom design widgets based on Marimo widgets with configurable behavior fully under our control.
 
 ---
 
