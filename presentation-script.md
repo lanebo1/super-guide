@@ -100,7 +100,7 @@ Auth Service uses Java with Spring Boot for REST API, Spring Security with JWT f
 
 ## Mikhail Trifonov - Slide #16 - Authentication Service: Problems & Solutions
 
-We solved three critical problems: first, access tokens remaining valid after user logout, which we addressed through token blacklisting and invalidation. Second, user data consistency between Auth and Users Services, solved by transferring the storage of all user data to the Users Service. Third, username changes invalidating current access tokens, resolved through token reissue logic that preserves user sessions seamlessly.
+We solved several problems, one of them was in access tokens remaining valid after user logout, which we addressed through token blacklisting and invalidation.
 
 ---
 
@@ -124,7 +124,7 @@ We use same framework as for Auth Service. PostgreSQL stores user data and point
 
 ## Mikhail Trifonov - Slide #20 - Users Service: Problems & Solutions
 
-Two main challenges were resolved: first, the create-drop ORM strategy causing inconsistency during container restarts, solved by using Flyway. Second, strict control for the points system was needed, addressed through transactional methods preventing any counters inconsistency.
+Two main challenge challenge was in the create-drop ORM strategy causing inconsistency during container restarts, which was solved by using Flyway.
 
 ---
 
