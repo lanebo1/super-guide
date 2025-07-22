@@ -172,7 +172,7 @@ Articles Service built with Python programming language and exchanges with data 
 
 ## Timur Salakhov - Slide #28 - Articles Service: Problems & Solutions
 
-While I developed this service, I met several problems, but the main problem is "Difficult interaction with database via SQL quieries". Some people may love write direct SQL quieries, but it's not flexible in terms of development: for each purpose you need to write SQL quieries, separate function to call... It's difficult. That's why I used SQLAlchemy ORM system to make it simple, clean, and flexible to develop a service
+While I developed this service, I met several problems, but the main problem is "Difficult interaction with database via SQL quieries". Some people may love writing direct SQL quieries, but it's not flexible in terms of development: for each purpose you need to write SQL quieries, separate function to call... It's difficult. That's why I used SQLAlchemy ORM system to make it simple, clean, and flexible to develop a service
 
 ---
 
