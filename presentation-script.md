@@ -124,7 +124,7 @@ We use same framework as for Auth Service. PostgreSQL stores user data and point
 
 ## Mikhail Trifonov - Slide #20 - Users Service: Problems & Solutions
 
-Two main challenge challenge was in the create-drop ORM strategy causing inconsistency during container restarts, which was solved by using Flyway.
+The main challenge was in the create-drop ORM strategy causing inconsistency during container restarts, which was solved by using Flyway.
 
 ---
 
