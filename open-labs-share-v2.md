@@ -389,8 +389,8 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 | ❌ **Problems**                                         | ✅ **Solutions**                                                                                   |
 |--------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| ❌ Complex data relationships between labs, submissions, and tags | ✅ Used `SQLAlchemy` models with proper foreign keys and many-to-many relationships for structured data management |
 | ❌ Large submission text content causing database bloat | ✅ Implemented hybrid storage: metadata in PostgreSQL, text content in MongoDB for flexibility |
+| ❌ Complex data relationships between labs, submissions, and tags | ✅ Used `SQLAlchemy` models with proper foreign keys and many-to-many relationships for structured data management |
 | ❌ Need to organize files systematically | ✅ Created structured MinIO bucket organization: `labs/lab_id/` and `submissions/submission_id/` |
 
 
