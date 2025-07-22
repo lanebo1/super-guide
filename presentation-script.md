@@ -38,7 +38,7 @@ So, what is Open Labs Share as a product? it is a content creation for high-qual
 
 ## Nikita Maksimenko - Slide #6 - Technical Vision
 
-On the picture you can see architecture of whole system. We have 10 microservices, 9 separate databases and two main protocols of communicaiton, dark blue arrows are gRPC, purple ones - REST.
+On the picture you can see architecture of the whole system. We have 10 microservices, 9 separate databases and two main protocols of communicaiton, dark blue arrows are gRPC, purple ones - REST.
 
 ---
 
