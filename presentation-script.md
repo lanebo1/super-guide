@@ -14,13 +14,13 @@ Good morning, everyone. I'm Kirill, the project manager and DevOps engineer for 
 
 ## Kirill Efimovich - Slide #2 - Agenda
 
-About agenda. We'll start with the problem and our solve, introduce our team, and show demo. Then we'll dive into frontend engineering, explore our system architecture aligned with backend microservices, discuss our ML integration, cover our DevOps things, and then wrap it up for discussion.
+About agenda. We'll start with the problem and our solve, introduce our team, and show demo. Then we'll dive into tech stuff, and then wrap it up for discussion.
 
 ---
 
 ## Kirill Efimovich - Slide #3 - The Problem: Skills Gap in Tech Education
 
-We identified key challenges in education technology: limited real-world project experience, inefficient mentor-learner matching, and poor feedback loops between industry and education. Our engineering mission is to build a platform that connects experts with young developers through hands-on technical projects.
+We identified key challenges in education technology, the main is inefficient mentor-learner matching, and poor feedback loops. Our engineering mission is to build a platform that connects experts with young developers through practical projects.
 
 ---
 
@@ -32,13 +32,13 @@ About us: I've handled project leadership and DevOps engineering, Mikhail managi
 
 ## Kirill Efimovich - Slide #5 - Product Vision
 
-So, what is Open Labs Share as a product? It is a modern learning platform that bridges the gap between academia and practice. We made it: content creation for high-quality learning materials, improved learning experience with structured review processes. With Marimo elements and chat and code autograding powered by ML services we created something that is not just a learning platform, but a learning experience.
+So, what is Open Labs Share as a product? it is a content creation for high-quality learning materials, improved learning experience with structured review processes. With Marimo elements and chat and code autograding powered by ML services we created something that is not just a learning platform, but a learning experience.
 
 ---
 
 ## Kirill Efimovich - Slide #6 - Technical Vision
 
-From a technical perspective, Open Labs Share is a microservices learning ecosystem with AI-powered assistance. We have separate services for labs, articles, feedback and more, connected through fast and reliable gRPC inter-service communication. Included Marimo elements and chat and code autograding ML services are also part of the ecosystem.
+From a technical perspective, Open Labs Share is a microservices ecosystem with ML additions. We have separate services for labs, articles, feedback and more, connected through fast and reliable gRPC inter-service communication. Included Marimo elements and chat and code autograding ML services are also part of the ecosystem.
 
 ---
 
