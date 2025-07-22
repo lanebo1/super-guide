@@ -172,7 +172,7 @@ Articles Service built with Python programming language and exchanges with data 
 
 ## Timur Salakhov - Slide #28 - Articles Service: Problems & Solutions
 
-While I developed this service, I met several problems, but the main problem is "Difficult interaction with database via SQL quieries". Some people may love writing direct SQL quieries, but it's not flexible in terms of development: for each purpose you need to write SQL quieries, separate function to call... It's difficult. That's why I used SQLAlchemy ORM system to make it simple, clean, and flexible to develop a service
+While I developed this service, I met several problems, but the main is connected to SQL queries. Some people may love writing direct SQL queries, but it's not flexible: each purpose - separate query, separate function to call... That's why I used ORM to make it simple, clean, and flexible to develop a service
 
 ---
 
@@ -190,13 +190,13 @@ It deals with labs, submissions, and assets management. Stores all metadata and 
 
 ## Timur Salakhov - Slide #31 - Labs Service: Tech Stack & Connections
 
-Tech stack is pretty much the same as Articles Service: Python and gRPC as well. Service Integrations little differs: there are API Gateway, PostgreSQL database and MinIO storage, but there also a MongoDB database and it is about the problem solution
+Stack is pretty much the same as Articles Service: Python and gRPC as well. However, integrations little differs: there are API Gateway, PostgreSQL and MinIO, but there also a MongoDB database ->
 
 ---
 
 ## Timur Salakhov - Slide #32 - Labs Service: Problems & Solutions
 
-While I developed Labs Service, I met a many problems, but the main is "Large submission text content causing database bloat". Lab submissions could not only have a file asset, but also a long description text. After some reseach, I conducted to move subsmission description to MongoDB because it useful to store big texts
+-> which I used to store lab submissions descriptions. I could store everything in PostgreSQL but I found out MongoDB is useful in terms of big texts, so thats why I used it
 
 ---
 
