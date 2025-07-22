@@ -26,13 +26,13 @@ We found that typical learning lacks practice required by all jobs. Our mission 
 
 ## Kirill Efimovich - Slide #4 - Meet the Team
 
-About us: I've handled project leadership and DevOps engineering, Mikhail managing authentication systems, Nikita designed and implemented API systems, Timur made content systems, Ravil worked on feedback systems, Kirill developed ML and tackeld backend, and Aleliya designed and implemented frontend.
+About us: I've handled project leadership and DevOps engineering, Mikhail Nikita Timur and Ravil worked on backend, Kirill developed ML and Aleliya designed and implemented frontend.
 
 ---
 
 ## Kirill Efimovich - Slide #5 - Product Vision
 
-So, what is Open Labs Share as a product? it is a content creation for high-quality learning materials, improved learning experience with structured review processes. With Marimo elements and chat and code autograding powered by ML services we created something that is not just a learning platform, but a learning experience.
+So, what is Open Labs Share as a product? It is a content creation system, improved learning experience with structured feedback. With Marimo elements and chat and code autograding powered by ML services we created something that is not just a learning platform, but a learning experience.
 
 ---
 
@@ -172,7 +172,7 @@ Articles Service built with Python programming language and exchanges with data 
 
 ## Timur Salakhov - Slide #28 - Articles Service: Problems & Solutions
 
-While I developed this service, I met several problems, but the main is connected to SQL queries. Some people may love writing direct SQL queries, but it's not flexible: each purpose - separate query, separate function to call... That's why I used ORM to make it simple, clean, and flexible to develop a service
+While we developed this service, we met several problems, but the main is connected to SQL queries. Some people may love writing direct SQL queries, but it's not flexible: each purpose - separate query, separate function to call... That's why we used ORM to make it simple, clean, and flexible to develop a service
 
 ---
 
@@ -196,7 +196,7 @@ Stack is pretty much the same as Articles Service: Python and gRPC as well. Howe
 
 ## Timur Salakhov - Slide #32 - Labs Service: Problems & Solutions
 
--> which I used to store lab submissions descriptions. I could store everything in PostgreSQL but I found out MongoDB is useful in terms of big texts, so thats why I used it
+-> which we used to store lab submissions descriptions. We could store everything in PostgreSQL but we found out MongoDB is useful in terms of big texts, so thats why we used it
 
 ---
 
