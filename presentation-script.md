@@ -38,7 +38,7 @@ So, what is Open Labs Share as a product? it is a content creation for high-qual
 
 ## Kirill Efimovich - Slide #6 - Technical Vision
 
-From a technical perspective, Open Labs Share is a microservices ecosystem with ML additions. We have separate services for labs, articles, feedback and more, connected through fast and reliable gRPC inter-service communication. Included Marimo elements and chat and code autograding ML services are also part of the ecosystem.
+From a technical perspective, Open Labs Share is a microservices ecosystem with ML additions. We have separate services for... everything, connected through fast and reliable gRPC. Included Marimo elements and chat and code autograding ML services are also part of the ecosystem.
 
 ---
 
