@@ -50,33 +50,33 @@ _Now I'll demonstrate our platform's core capabilities. First, you'll see our se
 
 ---
 
-## Aleliya Turushkina - Slide #8 - Frontend Architecture (Title)
+## Nikita Maksimenko - Slide #8 - Advanced System Architecture
+
+Before proceeding with each service, take a look at this monster. This is a complete architecture of our project. We use best microservice practices to make a scalable and high-performance application. 
+
+---
+
+## Aleliya Turushkina - Slide #9 - Frontend Architecture (Title)
 
 The frontend is a modern web app offering an intuitive, interactive experience with labs and articles.
 
 ---
 
-## Aleliya Turushkina - Slide #9 - Frontend: Main User Interface
+## Aleliya Turushkina - Slide #10 - Frontend: Main User Interface
 
 The frontend handles critical functionalities such as user authentication, profile management, and dynamic navigation. It allows users to browse, upload, and review labs and articles, participate in peer review processes, and communicate with real-time features like comments.
 
 ---
 
-## Aleliya Turushkina - Slide #10 - Frontend: Tech Stack & Connections
+## Aleliya Turushkina - Slide #11 - Frontend: Tech Stack & Connections
 
 Technically, the frontend uses React with Vite for fast build. We use specialized libraries like Markdown and KaTeX for content rendering.
 
 ---
 
-## Aleliya Turushkina - Slide #11 - Frontend: Problems & Solutions
+## Aleliya Turushkina - Slide #12 - Frontend: Problems & Solutions
 
 We had the problem of the inability to view Markdown content using a dark theme, which we solved by global theme switching and styling across the entire platform.
-
----
-
-## Nikita Maksimenko - Slide #12 - Advanced System Architecture
-
-Before proceeding with each service, take a look at this monster. This is a complete architecture of our project. We use best microservice practices to make a scalable and high-performance application. 
 
 ---
 
