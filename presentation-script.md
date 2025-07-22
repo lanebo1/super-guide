@@ -20,7 +20,7 @@ About agenda. We'll start with the problem and our solve, introduce our team, an
 
 ## Nikita Maksimenko - Slide #3 - The Problem: Skills Gap in Tech Education
 
-We identified key challenges in education technology, the main is inefficient mentor-learner matching, and poor feedback loops. Our engineering mission is to build a platform that connects experts with young developers through practical projects.
+We found that typical learning lacks practice required by all jobs. Our mission is to use our engineering skills to create a platform where theory meets practice.
 
 ---
 
@@ -38,7 +38,7 @@ So, what is Open Labs Share as a product? it is a content creation for high-qual
 
 ## Nikita Maksimenko - Slide #6 - Technical Vision
 
-From a technical perspective, Open Labs Share is a microservices ecosystem with ML additions. We have separate services for... everything, connected through fast and reliable gRPC. Included Marimo elements and chat and code autograding ML services are also part of the ecosystem.
+On the picture you can see architecture of whole system. We have 10 microservices, 9 separate databases and two main protocols of communicaiton, dark blue arrows are gRPC, purple ones - REST.
 
 ---
 
