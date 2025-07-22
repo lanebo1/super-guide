@@ -52,25 +52,25 @@ _Now I'll demonstrate our platform's core capabilities. First, you'll see our se
 
 ## Aleliya Turushkina - Slide #8 - Frontend Architecture (Title)
 
-The frontend is a modern web app offering an intuitive, interactive experience with labs and articles. It serves as the main gateway, ensuring seamless navigation and engagement with core features.
+The frontend is a modern web app offering an intuitive, interactive experience with labs and articles. It serves as the main gateway, ensuring smooth navigation and interaction with core features.
 
 ---
 
 ## Aleliya Turushkina - Slide #9 - Frontend: Main User Interface
 
-The frontend handles critical functionalities such as user authentication, profile management, and dynamic navigation. It allows users to browse, upload, and review labs and articles, participate in peer review processes, and engage with real-time features like chat and notifications. The UI is built to prioritize usability while maintaining scalability for future enhancements.
+The frontend handles critical functionalities such as user authentication, profile management, and dynamic navigation. It allows users to browse, upload, and review labs and articles, participate in peer review processes, and communicate with real-time features like comments.
 
 ---
 
 ## Aleliya Turushkina - Slide #10 - Frontend: Tech Stack & Connections
 
-Technically, the frontend leverages React with Vite for fast builds, Tailwind CSS for responsive styling, and React Router for SPA navigation. We use specialized libraries like React PDF Viewer and Markdown/KaTeX for content rendering. For backend communication, the frontend integrates with REST APIs via an API Gatewayю, plus real-time file download support from MinIO.
+Technically, the frontend uses React with Vite for fast builds, Tailwind CSS for responsive styling, and React Router for SPA navigation. For backend communication, the frontend integrates with REST APIs via an API Gateway, plus real-time file download support from MinIO.
 
 ---
 
 ## Aleliya Turushkina - Slide #11 - Frontend: Problems & Solutions
 
-We solved two key challenges: first, the lack of viewing capabilities for user submissions and feedback, which we addressed by implementing direct file downloads from MinIO. Second, the inability to view Markdown content using a dark theme, which we solved by implementing comprehensive theme switching and styling across the entire platform.
+We have the problem of the inability to view Markdown content using a dark theme, which we solved by implementing comprehensive theme switching and styling across the entire platform.
 
 ---
 
