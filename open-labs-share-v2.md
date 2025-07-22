@@ -98,9 +98,9 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 **Our solution - Open Labs Share:**
 
-- 💬 **Structured Feedback System**
-- 🤝 **Peer-to-Peer Platform**
-  
+
+> Peer-to-peer knowledge sharing platform, with comprehensive feedback system and interactive learning experience through labs and articles with AI-powered autograding.
+
 ---
 
 <!-- _class: compact-list -->
@@ -121,7 +121,9 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ## Live Technical Demo: 
 
-ЗДЕСЬ ДОЛЖНО БЫТЬ ДЕМО
+**Live Demo Links:**
+- 🎥 **Main Demo:** [Google Drive](https://drive.google.com/file/d/1xfI16HWrH7RtiNjHh0qmo8WQh7ozDTo0/view?usp=sharing)
+- 🎬 **Alternative:** [Yandex Disk](https://disk.yandex.ru/i/ylEaXv8_URGLbg)
 
 ---
 
