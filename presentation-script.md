@@ -202,25 +202,25 @@ _We addressed three main problems: complex data relationships between labs, subm
 
 ## Ravil Kazeev - Slide #33 - Feedback Service (Title)
 
-_The Feedback Service centralizes feedback and discussion by managing detailed lab reviews, supporting file attachments, and powering threaded conversations for both labs and articles. Great learning happens through meaningful feedback, and I designed this service to foster rich discussions and provide constructive guidance that helps students grow._
+The Feedback service handles reviews on lab solutions and provide comment section for both labs and articles to discuss the content by users 
 
 ---
 
 ## Ravil Kazeev - Slide #34 - Feedback Service: Primary Use Case
 
-_This comprehensive feedback and discussion management system enables reviewers to create, update, and delete detailed feedback on submissions using Markdown for text and code formatting. It powers a threaded commenting system for both labs and articles with nested replies keeping conversations structured and easy to follow. The service allows multiple file attachments per feedback entry, using efficient gRPC streaming to handle large uploads and downloads without high memory usage._
+The service allows reviewers to create, update, and delete detailed feedback on lab submissions, complete with file attachments. It also provides a threaded commenting system to keep discussions organized and easy to follow.
 
 ---
 
 ## Ravil Kazeev - Slide #35 - Feedback Service: Tech Stack & Connections
 
-_We built this using Go 1.24 as a high-performance, concurrent service ideal for I/O-heavy tasks. Our gRPC server provides a typed API for feedback, comments, and file streaming. We implemented a multi-storage backend with PostgreSQL storing structured feedback metadata, MongoDB storing unstructured comments and feedback content, and MinIO providing object storage for all file attachments._
+We chose Go for its high performance in concurrent, I/O-heavy tasks. The service communicates with the API Gateway via gRPC, providing a strongly-typed API for all operations. For data, we used a multi-storage approach: PostgreSQL for structured metadata, MongoDB for comments, and MinIO for file attachments.
 
 ---
 
 ## Ravil Kazeev - Slide #36 - Feedback Service: Problems & Solutions
 
-_Three major problems were resolved: first, a single database was inefficient for managing varied data types including metadata, text, and files. We implemented a multi-storage architecture using the best database for each job. Second, uploading large files as a single request was unreliable, leading to timeouts and memory errors. We re-architected attachment handling using gRPC streaming, processing files in small chunks for efficient and robust transfers. Third, file downloads through the Feedback service would create a bottleneck. We configured the MinIO bucket for public read access, allowing the service to provide direct file URLs to the frontend and offload all download traffic._
+A major challenge was that downloading files through the service created a bottleneck. We solved this by giving the frontend direct read access to MinIO. Our service now simply provides a file link, offloading all download traffic and improving performance.
 
 ---
 
