@@ -26,12 +26,9 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ## 🚨 The Problem and our Project
 
-**Engineering challenges in education technology:**
+🚨 It is difficult to find practice oriented materials in one place.
 
-- 🚧 **Limited real-world project experience** due to academic focus on theory
-- 💌 **Poor feedback loops** between industry needs and educational content
-
-💎 **Our project** is a content creation platform that efficiently connects mentors with young developers throu interactive learning and structured feedback.
+💎 **Our project** We created an open peer-to-peer platform where skilled ones can create their content for other learners.
 
 ---
 
