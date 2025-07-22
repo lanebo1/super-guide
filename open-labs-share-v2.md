@@ -82,19 +82,52 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
+<h2>🔐 Authentication & Users Service 👥</h2>
 
-<h2>🔐 Authentication Service </h2> <style>
+<div style="text-align: center; margin-bottom: 2em;">
+  <span style="font-size: 1.3em; color: #0D2447;">Mikhail Trifonov (Backend Engineer)</span>
+</div>
+
+<style>
   h2 {
     text-align: center;
     font-size: 2em;
     color: #0D2447;
+    margin-bottom: 0.5em;
   }
 </style>
-<img src="auth.png" alt="Frontend Architecture Diagram" style="max-width: 80%; height: 80%; display: block; margin: 0 auto;">
-<div style="text-align: center;">
+
+<div style="display: flex; align-items: flex-start; width: 100%; height: 60vh;">
+  <!-- Left column: Service Information -->
+  <div style="flex: 1; padding-right: 2em;">
+    <div style="margin-bottom: 0.7em;">
+      <h3 style="font-size: 1.2em; color: #0D2447; margin-bottom: 0.5em;">🪪 Authentication Service</h3>
+      <p style="font-size: 0.9em; color: #0D2447; line-height: 1.4;">
+        <strong>Handles all authentication flows and token lifecycle management for secure access control</strong> 🔑
+      </p>
+    </div>
+    <div style="margin-bottom: 0.7em;">
+      <h3 style="font-size: 1.2em; color: #0D2447; margin-bottom: 0.5em;">👫Users Service</h3>
+      <p style="font-size: 0.9em; color: #0D2447; line-height: 1.4;">
+        <strong>Manages all user data, credentials, and points for solving & reviewing labs</strong> 💸
+      </p>
+    </div>
+    <div>
+      <h4 style="font-size: 1.2em; color: #0D2447; margin-bottom: 0.5em;">☕ Tech Stack:</h4>
+      <p style="font-size: 0.9em; color: #0D2447;">Java 21 + Spring Boot 3.5, Spring Security + JWT, Flyway</p>
+    </div>
+  </div>
+  
+  <!-- Right column: Image -->
+  <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
+    <img src="auth_and_users.jpg" alt="Frontend Architecture Diagram" style="max-width: 80%; height: auto;">
+  </div>
 </div>
 
 ---
+
+
+
 
 ## Authentication Service: Primary Use Case
 
