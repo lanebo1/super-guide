@@ -154,49 +154,49 @@ About problems. We had to fix communication problems in team by introducing stri
 
 ## Timur Salakhov - Slide #25 - Articles Service (Title)
 
-_The Articles Service serves as the central repository for all scientific articles and research papers, enabling authors to publish content and students to access educational materials. Knowledge should be accessible and well-organized, and I built this service to be the backbone of our content ecosystem, where every article finds its perfect place._
+After we handled user management and created the basis for the rest of the microservices, we needed to create a service for Articles management - the Article Service.
 
 ---
 
 ## Timur Salakhov - Slide #26 - Articles Service: Primary Use Case
 
-_This service manages all articles and assets metadata. It provides CRUD operations for article details, handles article assets in an independent storage system, organizes and updates metadata for articles and assets, and provides article searching based on title and abstract._
+It deals with articles and its assets management. Stores all metadata and provides searching functionality
 
 ---
 
 ## Timur Salakhov - Slide #27 - Articles Service: Tech Stack & Connections
 
-_We built this using Python 3.12 as our programming language with gRPC for inter-service communication. The service integrations include the API Gateway receiving and returning data in gRPC format, PostgreSQL database storing all articles and asset metadata, and MinIO storage system storing all article assets._
+Articles Service built with Python programming language and exchanges with data via gRPC. It is integrated with API gateway, from which gets all articles requests, and databases: PostgreSQL for metadata storage and MinIO for assets storage
 
 ---
 
 ## Timur Salakhov - Slide #28 - Articles Service: Problems & Solutions
 
-_We resolved four key challenges: difficult database interaction via SQL queries, solved by using SQLAlchemy ORM for convenient and flexible database interaction. The need to organize article files systematically, addressed by creating structured MinIO bucket organization with articles organized by article ID. Large files causing timeout issues during upload, resolved by implementing streaming gRPC uploads for efficient file transfer. Frontend searching across articles, solved by moving search functionality to the service and building text search with pagination._
+While I developed this service, I met several problems, but the main problem is "Difficult interaction with database via SQL quieries". Some people may love write direct SQL quieries, but it's not flexible in terms of development: for each purpose you need to write SQL quieries, separate function to call... It's difficult. That's why I used SQLAlchemy ORM system to make it simple, clean, and flexible to develop a service
 
 ---
 
 ## Timur Salakhov - Slide #29 - Labs Service (Title)
 
-_The Labs Service serves as the central repository for all laboratory work and student submissions, enabling teachers to create assignments and students to submit solutions with comprehensive grading and feedback. Labs are where theory meets practice, and I created this service to handle the complexity of assignments and submissions while keeping the learning process smooth and engaging._
+Then goes Labs Service. Its purpose is approximately the same: to handle Labs management
 
 ---
 
 ## Timur Salakhov - Slide #30 - Labs Service: Primary Use Case
 
-_This service manages all labs, submissions, and educational content. It provides CRUD operations for lab assignments with tags, handles submissions with text content and file assets, organizes labs with flexible tagging and search capabilities, and tracks submission status and grade workflow._
+It deals with labs, submissions, and assets management. Stores all metadata and provides searching functionality, including tag and grading system
 
 ---
 
 ## Timur Salakhov - Slide #31 - Labs Service: Tech Stack & Connections
 
-_We use Python 3.12 with hybrid database architecture and MinIO storage. Service integrations include the API Gateway as single entry point for all requests, PostgreSQL database storing labs, submissions, tags, and asset metadata, MongoDB database storing submission text content for flexible storage, and MinIO storage system storing lab and submission assets in organized buckets._
+Tech stack is pretty much the same as Articles Service: Python and gRPC as well. Service Integrations little differs: there are API Gateway, PostgreSQL database and MinIO storage, but there also a MongoDB database and it is about the problem solution
 
 ---
 
 ## Timur Salakhov - Slide #32 - Labs Service: Problems & Solutions
 
-_We addressed three main problems: complex data relationships between labs, submissions, and tags, solved using SQLAlchemy models with proper foreign keys and many-to-many relationships for structured data management. Large submission text content causing database bloat, resolved by implementing hybrid storage with metadata in PostgreSQL and text content in MongoDB for flexibility. The need to organize files systematically, addressed by creating structured MinIO bucket organization for labs and submissions._
+While I developed Labs Service, I met a many problems, but the main is "Large submission text content causing database bloat". Lab submissions could not only have a file asset, but also a long description text. After some reseach, I conducted to move subsmission description to MongoDB because it useful to store big texts
 
 ---
 
