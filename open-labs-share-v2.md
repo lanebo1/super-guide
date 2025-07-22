@@ -148,15 +148,8 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 | ❌ Inability to view Markdown using a dark theme        | ✅ Implemented theme switching and style across the entire platform                               |
 
 ---
-<!-- _class: tech-details -->
 
-## Advanced System Architecture
-
-**Architecture designed for high availability and horizontal scaling**
-
-```mermaid
-
-```
+![alt text](image.png)
 
 ---
 
