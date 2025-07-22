@@ -5,6 +5,71 @@ class: lead
 paginate: true
 ---
 
+<style>
+.service-header {
+  text-align: center;
+  font-size: 2em;
+  color: #0D2447;
+  margin-bottom: 0.5em;
+}
+
+.service-author {
+  text-align: center;
+  font-size: 1.3em;
+  color: #0D2447;
+  margin-bottom: 2em;
+}
+
+.centered-image {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.large-centered-image {
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.service-layout {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  height: 60vh;
+}
+
+.service-content {
+  flex: 1;
+  padding-right: 2em;
+}
+
+.service-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-section {
+  margin-bottom: 0.7em;
+}
+
+.service-title {
+  font-size: 1.2em;
+  color: #0D2447;
+  margin-bottom: 0.5em;
+}
+
+.service-description {
+  font-size: 0.9em;
+  color: #0D2447;
+  line-height: 1.4;
+}
+</style>
+
 <!-- 
 _class: lead
 _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleliya Turushkina, Mikhail Trifonov, Nikita Maksimenko, Timur Salakhov, Ravil Kazeev, Kirill Shumskiy</h1>' 
@@ -24,16 +89,18 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 <!-- _class: compact-list -->
 
-## 🚨 The Problem and our Project
+## ⚡ The Problem & Our Vision
 
-🚨 It is difficult to find practice oriented materials in one place.
+**Current challenges in tech education:**
 
-💎 **Solution:** We created an open peer-to-peer platform where skilled ones can create their content for other learners.
+- 📚 **Fragmented Learning Resources**
+- 🔄 **Weak Industry-Education Bridge**
 
-- 💌 **Poor feedback loops** between industry needs and educational content
+**Our solution - Open Labs Share:**
 
-💎 **Solution:** Provide ability to solve labs and recieve feedback from author or other skilled members.
-
+- 💬 **Structured Feedback System**
+- 🤝 **Peer-to-Peer Platform**
+  
 ---
 
 <!-- _class: compact-list -->
@@ -52,22 +119,13 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 <!-- _class: compact-list -->
 
-## Live Technical Demo: Core Features
-
-**Interactive walkthrough of platform capabilities:**
-
-1. 🔐 **Secure Authentication:** OAuth2/JWT with multi-factor authentication demo
-2. 🔍 **Intelligent Lab Discovery:** ML-powered recommendations and search
-3. ⚡ **Advanced Development Workflow:** Real-time collaboration and submission pipeline
-4. 🧠 **Intelligent Review Engine:** AI-assisted peer matching and quality scoring
-5. 📊 **Analytics Dashboard:** Real-time metrics and performance insights
-
+## Live Technical Demo: 
 
 ЗДЕСЬ ДОЛЖНО БЫТЬ ДЕМО
 
 ---
 
-## :tulip: Frontend: Tech Stack & Connections
+<h2 class="service-header">🌸 Frontend: Tech Stack & Connections</h2>
 
 - :sunny: **Frontend:** React, Vite, Tailwind CSS, React Router
 - :seedling: **Component Libraries:** React PDF Viewer, Markdown/KaTeX
@@ -78,69 +136,48 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-<img src="image.png" alt="Frontend Architecture Diagram" style="max-width: 90%; height: auto; display: block; margin: 0 auto;">
-
+<img src="image.png" alt="Frontend Architecture Diagram" class="large-centered-image">
 
 ---
 
-<h2>🔐 Authentication & Users Service 👥</h2>
+<h2 class="service-header">🔐 Authentication & Users Service 👥</h2>
 
-<div style="text-align: center; margin-bottom: 2em;">
-  <span style="font-size: 1.3em; color: #0D2447;">Mikhail Trifonov (Backend Engineer)</span>
-</div>
+<div class="service-author">Mikhail Trifonov (Backend Engineer)</div>
 
-<style>
-  h2 {
-    text-align: center;
-    font-size: 2em;
-    color: #0D2447;
-    margin-bottom: 0.5em;
-  }
-</style>
-
-<div style="display: flex; align-items: flex-start; width: 100%; height: 60vh;">
-  <!-- Left column: Service Information -->
-  <div style="flex: 1; padding-right: 2em;">
-    <div style="margin-bottom: 0.7em;">
-      <h3 style="font-size: 1.2em; color: #0D2447; margin-bottom: 0.5em;">🪪 Authentication Service</h3>
-      <p style="font-size: 0.9em; color: #0D2447; line-height: 1.4;">
+<div class="service-layout">
+  <div class="service-content">
+    <div class="service-section">
+      <h3 class="service-title">🔐 Authentication Service</h3>
+      <p class="service-description">
         <strong>Handles all authentication flows and token lifecycle management for secure access control</strong> 🔑
       </p>
     </div>
-    <div style="margin-bottom: 0.7em;">
-      <h3 style="font-size: 1.2em; color: #0D2447; margin-bottom: 0.5em;">👫Users Service</h3>
-      <p style="font-size: 0.9em; color: #0D2447; line-height: 1.4;">
+    <div class="service-section">
+      <h3 class="service-title">👫Users Service</h3>
+      <p class="service-description">
         <strong>Manages all user data, credentials, and points for solving & reviewing labs</strong> 💸
       </p>
     </div>
     <div>
-      <h4 style="font-size: 1.2em; color: #0D2447; margin-bottom: 0.5em;">☕ Tech Stack:</h4>
-      <p style="font-size: 0.9em; color: #0D2447;">Java 21 + Spring Boot 3.5, Spring Security + JWT, Flyway</p>
+      <h4 class="service-title">☕ Tech Stack:</h4>
+      <p class="service-description">Java 21 + Spring Boot 3.5, Spring Security + JWT, Flyway</p>
     </div>
   </div>
   
-  <!-- Right column: Image -->
-  <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
-    <img src="auth_and_users.jpg" alt="Frontend Architecture Diagram" style="max-width: 80%; height: auto;">
+  <div class="service-image">
+    <img src="auth_and_users.jpg" alt="Authentication & Users Service Diagram" style="max-width: 80%; height: auto;">
   </div>
 </div>
 
 ---
 
-<h2>📥 API Gateway 📤 </h2> <style>
-  h2 {
-    text-align: center;
-    font-size: 2em;
-    color: #0D2447;
-  }
-</style>
-<img src="api.png" alt="API Gateway Architecture Diagram" style="max-width: 80%; height: 80%; display: block; margin: 0 auto;">
-<div style="text-align: center;">
-</div>
+<h2 class="service-header">📥 API Gateway 📤</h2>
+
+<img src="api.png" alt="API Gateway Architecture Diagram" class="centered-image">
 
 ---
 
-## API Gateway: Primary Use Case
+<h2 class="service-header">API Gateway: Primary Use Case</h2>
 
 **Centralized entry point and request orchestration for all client interactions** 🌐
 
@@ -152,7 +189,7 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-## API Gateway: Tech Stack & Connections
+<h2 class="service-header">API Gateway: Tech Stack & Connections</h2>
 
 **Java Spring Boot with REST-to-gRPC translation** ☕🔄
 
@@ -164,25 +201,16 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
     ⤷ Intercept incoming REST requests for authentication and authorization
 - 🔀 **gRPC Client:** 
     ⤷ gRPC provides high-speed, type-safe, and scalable service-to-service communication
-- 📤 **Response Handling:** 
-    ⤷ Centralizes response handling and error management over the whole backend
 
 ---
 
-<h2>📚 Articles Service </h2> <style>
-  h2 {
-    text-align: center;
-    font-size: 2em;
-    color: #0D2447;
-  }
-</style>
-<img src="articles.png" alt="Articles Service Architecture Diagram" style="max-width: 80%; height: 80%; display: block; margin: 0 auto;">
-<div style="text-align: center;">
-</div>
+<h2 class="service-header">📚 Articles Service</h2>
+
+<img src="articles.png" alt="Articles Service Architecture Diagram" class="centered-image">
 
 ---
 
-## Articles Service: Primary Use Case
+<h2 class="service-header">Articles Service: Primary Use Case</h2>
 
 **Manages all articles & assets metadata** 🗄️
 
@@ -193,7 +221,7 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-## Articles Service: Tech Stack & Connections
+<h2 class="service-header">Articles Service: Tech Stack & Connections</h2>
 
 **Python-based microservice with PostgreSQL and MinIO storage** 🐍
 
@@ -207,20 +235,13 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-<h2>📚 Labs Service </h2> <style>
-  h2 {
-    text-align: center;
-    font-size: 2em;
-    color: #0D2447;
-  }
-</style>
-<img src="labs.png" alt="Labs Service Architecture Diagram" style="max-width: 80%; height: 80%; display: block; margin: 0 auto;">
-<div style="text-align: center;">
-</div>
+<h2 class="service-header">📚 Labs Service</h2>
+
+<img src="labs.png" alt="Labs Service Architecture Diagram" class="centered-image">
 
 ---
 
-## Labs Service: Primary Use Case
+<h2 class="service-header">Labs Service: Primary Use Case</h2>
 
 **Manages all labs, submissions & educational content** 🗄️
 
@@ -229,9 +250,9 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 - 🏷️ **Tag System:** Organizes labs with flexible tagging and search capabilities
 - 📊 **Grading System:** Tracks submission status and grade workflow
 
-
 ---
-## Labs Service: Tech Stack & Connections
+
+<h2 class="service-header">Labs Service: Tech Stack & Connections</h2>
 
 **Python with hybrid database architecture and MinIO storage** 🐍
 
@@ -246,20 +267,13 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-<h2>💬 Feedback Service </h2> <style>
-  h2 {
-    text-align: center;
-    font-size: 2em;
-    color: #0D2447;
-  }
-</style>
-<img src="feedback.png" alt="Feedback Service Architecture Diagram" style="max-width: 80%; height: 80%; display: block; margin: 0 auto;">
-<div style="text-align: center;">
-</div>
+<h2 class="service-header">💬 Feedback Service</h2>
+
+<img src="feedback.png" alt="Feedback Service Architecture Diagram" class="centered-image">
 
 ---
 
-## Feedback Service: Primary Use Case
+<h2 class="service-header">Feedback Service: Primary Use Case</h2>
 
 **Comprehensive feedback and discussion management system** 💬
 
@@ -269,7 +283,7 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-## Feedback Service: Tech Stack & Connections
+<h2 class="service-header">Feedback Service: Tech Stack & Connections</h2>
 
 **Go with a multi-storage backend and gRPC API** 🐹💾
 
@@ -284,20 +298,13 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-<h2>📓 Marimo Service </h2> <style>
-  h2 {
-    text-align: center;
-    font-size: 2em;
-    color: #0D2447;
-  }
-</style>
-<img src="marimo.png" alt="Marimo Service Architecture Diagram" style="max-width: 80%; height: 80%; display: block; margin: 0 auto;">
-<div style="text-align: center;">
-</div>
+<h2 class="service-header">📓 Marimo Service</h2>
+
+<img src="marimo.png" alt="Marimo Service Architecture Diagram" class="centered-image">
 
 ---
 
-## Marimo Service: Primary Use Case
+<h2 class="service-header">Marimo Service: Primary Use Case</h2>
 
 - 👟 **Code Execution:** Real-time cell execution with output capture and error handling 🖐️
 - 📊 **Asset Management:** Upload/download datasets and files for notebook use 🐪
@@ -306,7 +313,7 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-## Marimo Service: Tech Stack & Connections
+<h2 class="service-header">Marimo Service: Tech Stack & Connections</h2>
 
 - 🔧 **Java Manager + Python Executor:** 
 &nbsp;&nbsp;&nbsp;⤷ Java handles `REST API` and `metadata` while Python `executes` notebooks
@@ -321,7 +328,7 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-## ML Service: Primary Use Case
+<h2 class="service-header">ML Service: Primary Use Case</h2>
 
 **Two powerful AI enhancements for the learning platform** 🧠
 
@@ -332,7 +339,7 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 <!-- _class: compact-list -->
 
-## ML Service: Tech Stack & Connections
+<h2 class="service-header">ML Service: Tech Stack & Connections</h2>
 
 **FastAPI backend with specialized AI models and infrastructure** 🐍🤖
 
@@ -353,7 +360,6 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 </ul>
 </div>
 </div>
-</div>
 
 **Core Architecture:**
 🐍 **FastAPI-based backend** with three-layer structure 
@@ -362,34 +368,19 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
+<h2 class="service-header">🤖 ML Service Architecture</h2>
 
-<h2>🤖 ML Service Architecture</h2> <style>
-  h2 {
-    text-align: center;
-    font-size: 2em;
-    color: #0D2447;
-  }
-</style>
-<img src="asssets\asssets\open-labs-share-ml.drawio.png" alt="ML Service Architecture Diagram" style="max-width: 80%; height: 80%; display: block; margin: 0 auto;">
-<div style="text-align: center;">
-</div>
+<img src="asssets\asssets\open-labs-share-ml.drawio.png" alt="ML Service Architecture Diagram" class="centered-image">
 
 ---
 
-<h2>🏙️ DevOps & Infrastructure </h2> <style>
-  h2 {
-    text-align: center;
-    font-size: 2em;
-    color: #0D2447;
-  }
-</style>
-<img src="подумаю.png" alt="DevOps Infrastructure Architecture Diagram" style="max-width: 80%; height: 80%; display: block; margin: 0 auto;">
-<div style="text-align: center;">
-</div>
+<h2 class="service-header">🏙️ DevOps & Infrastructure</h2>
+
+<img src="devops.png" alt="DevOps Infrastructure Architecture Diagram" class="centered-image" style="max-width: 80%; height: 90%; display: block; margin: 0 auto;">
 
 ---
 
-## 🏛️ DevOps: Primary Use Case
+<h2 class="service-header">🏛️ DevOps: Primary Use Case</h2>
 
 **Key GitHub Actions Workflows:** 💫
 - 🔧 **Compilation Validation:** Ensures all services compile
@@ -400,7 +391,7 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-## 🛤️ DevOps: Infrastructure
+<h2 class="service-header">🛤️ DevOps: Infrastructure</h2>
 
 <div style="display: flex; gap: 2em;">
 <div style="flex: 2;">
@@ -431,7 +422,7 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-## Communication Problems
+<h2 class="service-header">📺 Communication Problems</h2>
 
 | ❌ **Problems** | ✅ **Solutions** |
 |---|---|
@@ -440,7 +431,7 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
-## Implementation Problems
+<h2 class="service-header">🏭 Implementation Problems</h2>
 
 | ❌ **Problems** | ✅ **Solutions** |
 |---|---|
