@@ -442,6 +442,12 @@ _footer: '<h1 style="font-size: 1.17em; color: #0D2447;">Kirill Efimovich, Aleli
 
 ---
 
+<h2 class="service-header">🏃🏻 Try it out!</h2>
+
+<img src="qrcode.png" alt="Try it out!" class="centered-image" style="max-width: 100%; height: auto; border-radius: 20px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); border: 3px solid #ffffff;">
+
+---
+
 <!-- _class: lead -->
 
 <h1>Thank you!</h1>
